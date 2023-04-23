@@ -1,0 +1,151 @@
+:root{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #00081d;
+    width: fit-content;
+}
+/* header */
+/* netflix logo */
+.default-ltr-cache-mv4tc2 {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgba(229, 9, 20, 1);
+    fill: currentColor;
+    display: block;
+}
+/* buttonsNav */
+a.btn.btn-secondary.dropdown-toggle{
+    background-color: #0f1118 !important;
+}
+a.dropdown-item {
+    background: white;
+}
+a.dropdown-item:hover{
+background: #000;
+color: white ;
+}
+i.fa-solid.fa-globe {
+    background: transparent;
+}
+.btn.ms-3 {
+    background-color: rgb(230, 10, 21) !important;
+    color: white !important;
+    font-weight: 400;
+} 
+/* header end */
+/* section 1 */
+.topSub {
+    background-image:radial-gradient(93.75% 105.88% at 0.39% 99.26%, rgba(150, 1, 7, 0.4) 1.42%, rgba(30, 1, 66, 0.51) 53.8%, rgba(13, 14, 32, 0) 100%),linear-gradient(98.24deg, #1D0005 14.75%, rgba(0, 8, 29, 0.48) 100%),url(/images/EG-en-20230417-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.topSub h1 {
+    font-weight: 900;
+    font-size: 65px;
+    margin-bottom: 2%;
+    font-family: 'Inter', sans-serif;
+}
+.p1TopSub {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4%;
+    font-family: 'Inter', sans-serif;
+}
+.p2TopSub {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 2%;
+    font-family: 'Inter', sans-serif;
+}
+
+input#exampleFormControlInput1 {
+    background: #1e1016;
+    color: white !important;
+    border: none !important;;
+    border: 1px solid rgb(99, 89, 89) !important;;
+}
+::placeholder {
+    color: rgb(145, 131, 131) !important;
+    opacity: 1; /* Firefox */
+}
+
+button.d-flex.justify-content-center.align-items-center.btn{
+    background-color:  rgb(230, 10, 21);
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
+}
+  /* section 1 end */
+  /* section 2 start */
+.sectionTwoH1 {
+    font-weight: 900;
+    font-size: 45px;
+    margin-bottom: 2%;
+    font-family: 'Inter', sans-serif;
+    }
+    .sectionTwoP{
+        font-size: 21px;
+        font-weight: 400;
+        margin-bottom: 2%;
+    font-family: 'Inter', sans-serif;
+}
+.sectionTwoimg {
+    width: 85%;
+}
+.col-md-6.Img {
+    display: flex;
+}
+/* section 2 end */
+/* section 3 start */
+button.accordion-button.collapsed ,.accordion-item , button.accordion-button.text-white {
+    background-color: rgb(19 33 68);
+    border: none !important;
+}
+#FAQ {
+    font-size: 36px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+}
+.accordionP {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 2%;
+    font-family: 'Inter', sans-serif;
+}
+#ReadyP {
+    font-size:18px;
+    font-weight: 500;
+    margin-bottom: 2%;
+    font-family: 'Inter', sans-serif;
+}
+
+input#exampleFormControlInput1bottom {
+    width: 35% !important;
+    background: #1e1016;
+    color: white !important;
+    border: none !important;;
+    border: 2px solid rgb(75, 169, 94) !important;;
+}
+
+/* section 3 start */
+
+ul#footerUl li {
+list-style: none;
+text-decoration: underline;
+color:rgb(90 92 97) ;
+padding: 0;
+padding-bottom: 10px;
+}
+
+#QuestionFooter {
+text-decoration: underline;
+color:rgb(90 92 97);
+}
