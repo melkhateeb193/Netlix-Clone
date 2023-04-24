@@ -6,7 +6,11 @@
 }
 body{
     background-color: #00081d;
-    width: fit-content;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
 /* header */
 /* netflix logo */
@@ -141,11 +145,186 @@ ul#footerUl li {
 list-style: none;
 text-decoration: underline;
 color:rgb(90 92 97) ;
-padding: 0;
+padding: 0 !important;
 padding-bottom: 10px;
+}
+ul#footerUl {
+padding: 0 !important;
+/* padding-bottom: 10px; */
 }
 
 #QuestionFooter {
 text-decoration: underline;
 color:rgb(90 92 97);
 }
+
+@media (max-width: 575.98px) {
+    .topSub {
+      background-size: 100%;
+      border-radius: 0;
+    }
+    .topSub h1 {
+      font-size: 30px;
+    }
+    .p1TopSub {
+      font-size: 15px;
+    }
+    .p2TopSub {
+      font-size: 15px;
+    }
+    input#exampleFormControlInput1 {
+      font-size: 14px;
+    }
+    .sectionTwoH1 {
+        font-size: 25px;
+    }
+    .sectionTwoP{
+        font-size: 16px;
+    }
+    .sectionTwoimg {
+        width: 100%;
+    }
+    .col-md-6.Img {
+        display: block;
+    }
+    section.topSub.p-5.text-white.ms-4.me-4 {
+        padding: 0 !important;
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    .topSubC.w-75.p-5{
+        width: 100% !important;
+        padding: 10% !important;
+    }
+    div#EmailCont{
+        flex-direction: column !important;
+    }
+    input#exampleFormControlInput1{
+        width: 100% !important;
+        margin-bottom: 3% !important;
+    }
+    .row1-3.pe-5.ps-5.pb-3 {
+        padding: 10% !important;
+    } 
+    .row2-4.pe-5.ps-5.pb-3{
+        padding: 8% !important;
+        display: flex;
+        flex-direction: column-reverse !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .h1.sectionTwoH1 {
+        margin-bottom: 4% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .topSub {
+        background-size: 100%;
+        border-radius: 0;
+      }
+      .topSub h1 {
+        font-size: 38px;
+      }
+      .p1TopSub {
+        font-size: 15px;
+      }
+      .p2TopSub {
+        font-size: 15px;
+      }
+      
+    section.topSub.p-5.text-white.ms-4.me-4 {
+        padding: 0 !important;
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    .topSubC.w-75.p-5{
+        width: 100% !important;
+        padding: 10% !important;
+    }
+    div#EmailCont{
+        flex-direction: column !important;
+    }
+    input#exampleFormControlInput1{
+        width: 100% !important;
+        margin-bottom: 3% !important;
+    }
+    .row1-3.pe-5.ps-5.pb-3 {
+        padding: 10% !important;
+    } 
+    .row2-4.pe-5.ps-5.pb-3{
+        padding: 8% !important;
+        display: flex;
+        flex-direction: column-reverse !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .h1.sectionTwoH1 {
+        margin-bottom: 4% !important;
+    }
+}
+    /* Adjust styles for mobile devices */
+    .default-ltr-cache-mv4tc2 {
+        width: 6rem;
+        height: 1.5rem;
+        font-size: 1rem;
+    }
+    a.btn.btn-secondary.dropdown-toggle{
+        background-color: #0f1118 !important;
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+    }
+    a.dropdown-item {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+    }
+    i.fa-solid.fa-globe {
+        font-size: 1rem;
+    }
+    .btn.ms-3 {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+    }
+    .sectionTwoH1 {
+        font-size: 35px;
+    }
+    .sectionTwoP{
+        font-size: 18px;
+    }
+    .sectionTwoimg {
+        width: 70%;
+    }
+    .sectionTwoH1 {
+        font-size: 30px;
+        margin-bottom: 1%;
+    }
+    
+    .sectionTwoP{
+        font-size: 18px;
+        margin-bottom: 2%;
+    }
+    
+    .sectionTwoimg {
+        width: 100%;
+    }
+    #FAQ {
+        font-size: 28px;
+    }
+    
+    .accordionP {
+        font-size: 16px;
+    }
+    
+    #ReadyP {
+        font-size: 14px;
+        margin-bottom: 2%;
+    }
+    
+    input#exampleFormControlInput1bottom {
+        width: 100% !important;
+        margin-bottom: 1%;
+    }
+    
+    ul#footerUl li {
+        padding-bottom: 5px;
+    }
