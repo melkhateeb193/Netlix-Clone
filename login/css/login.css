@@ -1,0 +1,106 @@
+body {
+    background-image:url(/images/backgroundimahe.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0  , 0, 0, .6);
+}
+.default-ltr-cache-mv4tc2 {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: #e50914;
+    fill: currentColor;
+    display: block;
+}
+div#netflixLogoContainer {
+    margin: 1% !important;
+}
+main.container.p-5{
+    width: 33%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.signIn {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 6%;
+}
+
+footer {
+background-color: rgba(0, 0, 0, 0.7);
+}
+p#pFooter {
+    color: #737373;
+    font-size: 17px;
+}
+li#liColor {
+color: #737373;
+list-style: none;
+font-size: 12px;
+padding: 10px 0 6px 0 ;
+
+}
+ul {
+    padding-left: 0 !important;
+}
+ label.form-check-label, p#needHelp , p#textColor {
+color: #737373;
+font-size: 13px;
+}
+input#exampleCheck1 {
+    background-color: 737373 !important;
+}
+span#learnMore {
+color: #0071eb;
+}
+span#signUP {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+span#signUP:hover , span#learnMore:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button.btn.w-100.p-2.mb-3 {
+background-color: rgba(229, 9, 20, 1);
+color: white;
+font-weight: 600;
+padding: 3% !important;
+}
+@media (max-width: 575.98px) {
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+    main.container.p-5 {
+        margin : 0 !important;
+        padding : 10px !important;
+        width: 100%;
+    }
+    form.text-white.p-3 {
+        margin: 0 !important;
+        width: 100%;
+    }
+}
+@media (max-width: 680px) {
+    body {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+    }
+    main.container.p-5 {
+        margin : 0 !important;
+        padding : 0 !important;
+        width: 100% !important;
+    }
+    form.text-white.p-3 {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    footer {
+        border-top: 1px solid white;
+    }
+}
