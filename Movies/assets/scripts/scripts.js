@@ -14,12 +14,10 @@ searchClose.addEventListener("click", () => {
     searchInput.value = "";
 })
 ///////////////////////////////////////////////////////////////////////////////////
-
 //genres list
 let grid = document.getElementsByClassName("genres__grid")[0];
 function opengenres() {
     if (grid.style.display === 'none') {
         grid.style.display = 'grid';
-    }
-    else { grid.style.display = 'none' }
+    } else { grid.style.display = 'none' }
 }
