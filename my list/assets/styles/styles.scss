@@ -1,0 +1,230 @@
+@use"module";
+$bg: #141414;
+$c: #fff;
+
+@mixin myButton {
+    color: $c;
+    border: 0;
+    text-decoration: none;
+}
+
+.navbar {
+    padding: 0px 57px;
+    height: 4.25rem;
+}
+
+.navbar-brand {
+    width: 6rem;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar-nav .nav-link.active {
+    color: $c;
+}
+
+.checked {
+    font-weight: bolder;
+}
+
+.navbar__btn {
+    @include myButton;
+}
+
+.notifcations {
+    position: relative;
+    display: inline-block;
+
+    &__body {
+        display: none;
+        position: absolute;
+        top: 3.125rem;
+        right: -0.8rem;
+        background: rgba(0, 0, 0, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-top: 3px solid white;
+        width: 25.625rem;
+        height: 6.125rem;
+        z-index: 1;
+
+        &--arrow {
+            position: absolute;
+            right: 0;
+            top: -2rem;
+        }
+    }
+
+    &__grid {
+        display: flex;
+
+        &--img {
+            padding: 1rem;
+            border-radius: 20px;
+        }
+
+        &--section {
+            padding: 1rem 1rem 1rem 0;
+        }
+    }
+
+    &:hover &__body {
+        display: block;
+    }
+}
+
+.nav-element {
+    margin: 0 0.5rem;
+    height: 4.25rem;
+    margin-top: 2rem;
+}
+
+.secondary-navigation {
+    margin-top: 5px;
+}
+
+.profile {
+    position: relative;
+    display: inline-block;
+
+    &__picture {
+        width: 30px;
+        height: 30px;
+    }
+
+    &__menu {
+        display: none;
+        position: absolute;
+        top: 3.125rem;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        width: 13.75rem;
+        height: 24rem;
+        z-index: 1;
+        font-size: 13px;
+
+        &--arrow {
+            position: absolute;
+            right: 0;
+            top: -1.8rem;
+        }
+    }
+
+    &:hover &__menu {
+        display: block;
+    }
+
+    &__menu--list,
+    &__menu--listEnd {
+        list-style-type: none;
+        padding: 0.625rem 0 0.313rem 0;
+        margin: 0;
+    }
+
+
+    &__menu--listItem {
+        width: 13.625rem;
+        padding: 0.313rem 0.625rem;
+    }
+
+    &__menu--listImg1 {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 4px;
+        margin-right: 0.625rem;
+    }
+
+    &__menu--listImg2 {
+        width: 2rem;
+        height: 1.5rem;
+        border-radius: 4px;
+        margin-right: 0.625rem;
+    }
+
+    &__menu--listEnd {
+        text-align: center;
+        border-top: 1px solid hsla(0, 0%, 100%, .25);
+    }
+
+    &__menu--btn {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+
+
+.search {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        border: none;
+        background-color: $bg;
+        padding: 1px 6px;
+        height: 1.5rem;
+        position: absolute;
+    }
+
+    &__icon {
+        z-index: 99;
+    }
+
+    &__close {
+        right: 0;
+    }
+
+    input {
+        border: none;
+        font-family: inherit;
+        outline: none;
+        width: 2rem;
+        transition: 500ms width ease-in-out;
+        background-color: $bg;
+        color: $c;
+        padding-left: 45px;
+    }
+
+    &__open input {
+        width: 17rem;
+        height: 2.5rem;
+        outline: 1px solid $c;
+        padding: 0;
+    }
+}
+
+.top {
+    background-image: url("../images/interstellar.webp");
+    // height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav2 {
+    display: flex;
+}
+
+.brand2 {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 38px;
+    width: 8rem;
+    padding: 0 1rem 0 0;
+    margin: 0 20px 0 0;
+
+    &:hover,
+    :visited {
+        color: $c;
+        cursor: context-menu;
+    }
+}
