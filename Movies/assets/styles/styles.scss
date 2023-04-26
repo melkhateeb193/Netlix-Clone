@@ -191,20 +191,18 @@ $c: #fff;
         transition: 500ms width ease-in-out;
         background-color: $bg;
         color: $c;
-        padding-left: 45px;
     }
 
     &__open input {
         width: 17rem;
         height: 2.5rem;
         outline: 1px solid $c;
-        padding: 0;
+        padding: 0 0 0 50px;
     }
 }
 
 .top {
     background-image: url("../images/interstellar.webp");
-    // height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
