@@ -11,185 +11,475 @@
   <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./slider.css">
+  <link rel="stylesheet" href="./navStyle.css">
 </head>
 
 <body>
   <section>
     <!-- Header -->
     <div>
-      <nav id="navBar" class="navbar navbar-expand-lg ">
-        <div id="navBarContainer" class="container-fluid">
-          <a class="navbar-brand" href="#"><svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="default-ltr-cache-mv4tc2">
-              <g>
-                <path
-                  d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z">
-                </path>
-              </g>
-            </svg></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/icons/Netflix logo.svg">
+          </a>
+          <a class="navbar-toggler navbar__btn dropdown-toggle" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbar1Content" aria-controls="navbar1Content" aria-expanded="false"
+            aria-label="Toggle navigation" role="button">
+            Browse
+          </a>
+          <div class="collapse navbar-collapse" id="navbar1Content">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">
+                  Home
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">TV Shows</a>
+                <a class="nav-link active" aria-current="page" href="#">
+                  TV Shows
+                </a>
+              </li>
+              <li class="nav-item checked">
+                <a class="nav-link active " aria-current="page" href="#">
+                  Movies
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Movies</a>
+                <a class="nav-link active" aria-current="page" href="#">
+                  New & Popular
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">New & Popular</a>
+                <a class="nav-link active" aria-current="page" href="#">
+                  My List
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">My List</a>
+                <a class="nav-link active" aria-current="page" href="#">
+                  Browse by Languages
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Browse by Languages</a>
-              </li>
-
             </ul>
-
-            <a id="navRI" href="#" class="navRightIcons"><i class="bi bi-search"></i></a>
-            <a id="navRI" class="nav-link active" aria-current="page" href="#">Kids</a>
-            <a id="navRI" href="#" class="navRightIcons"><i class="bi bi-bell"></i></a>
-
+            <div class="secondary-navigation d-flex">
+              <div class="nav-element">
+                <div class="search">
+                  <img class="search__icon" src="./assets/icons/search.svg">
+                  <input type="text" class="search__input" autofocus placeholder="           Titles, people, genres">
+                  <img class="search__close" src="./assets/icons/close.svg">
+                </div>
+              </div>
+              <div class="nav-element">
+                <a class="navbar__btn" href="#">
+                  Kids
+                </a>
+              </div>
+              <div class="nav-element notifcations">
+                <a class="navbar__btn">
+                  <img src="./assets/icons/bell.svg">
+                </a>
+                <div class="notifcations__body">
+                  <img class="notifcations__body--arrow" src="./assets/icons/arrow down.svg">
+                  <div class="notifcations__grid">
+                    <img class="notifcations__grid--img" src="./assets/images/notifcation.jpg">
+                    <div class="notifcations__grid--section">
+                      <div>New Arrival</div>
+                      <div>The Diplomat</div>
+                      <span>1 day ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-element profile">
+                <a class="navbar__btn dropdown-toggle">
+                  <img class="profile__picture" src="./assets/images/smile1.png">
+                </a>
+                <div class="profile__menu">
+                  <img class="profile__menu--arrow" src="./assets/icons/arrow down.svg">
+                  <ul class="profile__menu--list">
+                    <li class="profile__menu--listItem">
+                      <img class="profile__menu--listImg1" src="./assets/icons/p2.png">
+                      <a class="profile__menu--btn" href="#">
+                        User 1
+                      </a>
+                    </li>
+                    <li class="profile__menu--listItem">
+                      <img class="profile__menu--listImg1" src="./assets/icons/p3.png">
+                      <a class="profile__menu--btn" href="#">
+                        User 2
+                      </a>
+                    </li>
+                    <li class="profile__menu--listItem">
+                      <img class="profile__menu--listImg1" src="./assets/icons/p4.png">
+                      <a class="profile__menu--btn" href="#">
+                        User 3
+                      </a>
+                    </li>
+                    <li class="profile__menu--listItem">
+                      <img class="profile__menu--listImg1" src="./assets/icons/kids.png">
+                      <a class="profile__menu--btn" href="#">
+                        Kids
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="profile__menu--list">
+                    <li class="profile__menu--listItem">
+                      <img class="profile__menu--listImg2" src="./assets/icons/pen.svg">
+                      <a class="profile__menu--btn" href="#">
+                        Manage Profiles
+                      </a>
+                    </li>
+                    <li class="profile__menu--listItem">
+                      <img class="profile__menu--listImg2" src="./assets/icons/transfer.svg">
+                      <a class="profile__menu--btn" href="#">
+                        Transfer Profile
+                      </a>
+                    </li>
+                    <li class="profile__menu--listItem">
+                      <img class="profile__menu--listImg2" src="./assets/icons/profile.svg">
+                      <a class="profile__menu--btn" href="#">
+                        Account
+                      </a>
+                    </li>
+                    <li class="profile__menu--listItem">
+                      <img class="profile__menu--listImg2" src="./assets/icons/help.svg">
+                      <a class="profile__menu--btn" href="#">
+                        Help Center
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="profile__menu--listEnd">
+                    <li class="profile__menu--listItem">
+                      <a class="profile__menu--btn" href="#">
+                        Sign out of Netflix
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
     </div>
     <div></div>
     <!-- Body -->
-    <div class="">
-      <!-- Top Video -->
-      <div id="videoBtns" class="row pageBody">
-        <div class="row" id="rowDesc">
-          <div class="col" id="vedioDesc">
-            <img
-              src="https://occ-0-4609-116.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABaFOv0Ma4-Chb8Jo4gFJgXL4L1mSafwaUok9padmq_ziqFKaAmoB0D0Tf5k_63F0Ylwl9VCXRy1FYp0CMayuarQ65FH5oo1eJkXnpLOWlDpcXKcpsbARWjXI2qlWidDzrrg5CXbCEc5PtKrpXm_-YgeQfhF9IDekd55uEihY8hwYVE14BUnzpw.webp?r=016"
-              alt="">
-              <div id="VideoPlay" class="d-flex">
-                <button id="btnsV1" class="btn"><img src="./icons/play.svg" alt=""> <span>Play</span></button>
-                <button id="btnsV2" class="btn"><img src="./icons/info.svg" alt=""> <span>More Info</span></button>  
-                <div id="endBtons" class="d-flex">
-                  <button id="btnsV3" class="btn"><img src="./icons/restart.svg" alt=""></button>  
-                  <div class="age d-flex">13+</div>
-                </div>
-              </div>
-              
+
+    
+    <div id="videoBtns" class="row pageBody">
+      <div class="row" id="rowDesc">
+        <!-- Top Video -->
+        <div class="col" id="vedioDesc">
+          <img
+            src="https://occ-0-4609-116.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABaFOv0Ma4-Chb8Jo4gFJgXL4L1mSafwaUok9padmq_ziqFKaAmoB0D0Tf5k_63F0Ylwl9VCXRy1FYp0CMayuarQ65FH5oo1eJkXnpLOWlDpcXKcpsbARWjXI2qlWidDzrrg5CXbCEc5PtKrpXm_-YgeQfhF9IDekd55uEihY8hwYVE14BUnzpw.webp?r=016"
+            alt="">
+          <div id="VideoPlay" class="d-flex">
+            <button id="btnsV1" class="btn"><img src="./icons/play.svg" alt=""> <span>Play</span></button>
+            <button id="btnsV2" class="btn"><img src="./icons/info.svg" alt=""> <span>More Info</span></button>
+            <div id="endBtons" class="d-flex">
+              <button id="btnsV3" class="btn"><img src="./icons/restart.svg" alt=""></button>
+              <div class="age d-flex">13+</div>
+            </div>
           </div>
-          <!-- Slider -->
-          <div class="wrapper">
-            <section id="section1">
-                <a href="#section3" class="arrow__btn">‹</a>
-                <div class="item">
-                    <img src="https://occ-0-1567-1123.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABRvngexxF8H1-OzRWFSj6ddD-aB93tTBP9kMNz3cIVfuIfLEP1E_0saiNAwOtrM6xSOXvoiSCMsihWSkW0dq808-R7_lBnr6WHbjkKBX6I3sD0uCcS8kSPbRjEDdG8CeeVXEAEV6spQ.webp">
-                </div>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABZEK-7pZ1H5FD4cTyUb9qB_KeyJGz5p-kfPhCFv4GU_3mbdm8Xfsy4IBchlG9PFNdGff8cBNPaeMra72VFnot41nt0y3e8RLgaVwwh3UvyM2H2_MkmadWbQUeGuf811K7-cxJJh7gA.jpg">
-                </div>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABQCoK53qihwVPLRxPEDX98nyYpGbxgi5cc0ZOM4iHQu7KQvtgNyaNM5PsgI0vy5g3rLPZdjGCFr1EggrCPXpL77p2H08jV0tNEmIfs_e8KUfvBJ6Ay5nM4UM1dl-58xA6t1swmautOM.webp">
-                </div>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABdYtAqj8CyaJTWq5taD8Ro_UgwH3nne9QpFGVps-2J3IG-leqrfqXFii4jzZn48nPYTkrlwKQEV0R7_cEKlYBPRzdKqNODc-Oz26IL3LlLgFboXibIWXwxzeYxzuqn0I9TpARjeByw.jpg">
-                </div>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABbcCX42tsqGbBvO2y9CQv5-7QvYbCfoHtXsuc6NPCtZaKa4l4fBX3XWvUwG9F2A3CTsNpHVmulxBbdXKwK8Q6xGjejd9FoadGkZ7CnGrSl601TOQjzSHJ23NuIPC8j0QMGORL4uRIA.jpg">
-                </div>
-                <a href="#section2" class="arrow__btn">›</a>
-            </section>
-            <section id="section2">
-                <a href="#section1" class="arrow__btn">‹</a>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABVopDZ5Fy9_fk_HO5WxHTXKKjKhtWFupbSjuvPwfLK_vytzon4EwRUdGgYJ34JwPxOTK_NkV3aXfkULMB0Dcct-FyfqzH-X44VXuRMp4QeBHlvKwWeZFpZlGdItPzmmg4scmwhG7SQ.jpg">
-                </div>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABTOj1-116yVcgKWMU2dI3GFR4x0fSkiGsqtLLeLUxRR7STaksjAqBTrYlTfrB8nIGnGvXksi0ewXAhVGg6-pLxpFOIfcpjK-pf8D5xehFZo5a6vJbo4L0AGbrzglbyUoq255QBJgRQ.jpg">
-                </div>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABd3IBDpxbRcHXvRMFCZeKa2aHLU1P4SJtrACMS9om3yhLjqPlvNlmR_fypPxjtbsbnKaC4JZhPSpDG4r_kdxSHHAltWguMcCB-1Y1OShr2zWfUv7Whf_39fNH5ZJ3_0gxQrs0akmQjQz44_LT7jXH5LMZ7iMBAzac5IEj4m7Fn_5OWEGYnVsDsKG-QTommDooULMDF9bEw.jpg">
-                </div>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABXSd7bhDddcwkq9XpksoQFCHVx29Sxl_h4hb2n3F2GIt32a4XWcOnctQfgnT5qdolv8UML6_xNB5CJ89h56wueb13mYmEBr0sx5e9iLPdtVcOQAOmKXKWHHXwFvJuCUwuNnL3s8eAQwqLXPVMHMEsujM684rUGrZNF2btN2GRy5-RyEslsxZO93V2Q_H2bWs8A8oayt1h5M.webp">
-                </div>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABbXWODpAWqVXcmmjMA7K-2mPkQpvwCLfSdeyhVXzR8A3MSpdSEnnjf4HEJJTYC-TnktU6njTUGAxmzWEYCaJbk4v_ZeL-7QGzmkvYBjg_N-evr2XmcX-Fanoyvu_nimFP4iigPe4O3Vr_WcgplhwkDrJwPUJa84wRLrNAx3TufN5V7cWRP4indqu5HQahvgFEqfL9zjp4g.jpg">
-                </div>
-                <a href="#section3" class="arrow__btn">›</a>
-            </section>
-            <section id="section3">
-                <a href="#section2" class="arrow__btn">‹</a>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABRr4YxdaABuAuH_3FmSQZn7BCvLp-UUPsXE9MiYpvFP3CSUHV2zOew5oVqKqqdaOd3tbFVS0Uf67uIs7_eZydlCghg4nK0nMatRpPImABwTOhnNzCLCxdKrua7pPIcPCZqBYTeAO5g.jpg">
-                </div>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/412e4119fb212e3ca9f1add558e2e7fed42f8fb4/AAAABTyWK1MKaw8GcObtz47R2Tj7wkLJ7qQu9tk6TVpcoyxpzD4B-zZ569bQ5vGrREBL-MWFkGilXUwy7tCDaj2XOGkUB4RsbbFAmp9NgSr6lygMpUGNHSlyfrFbUORsRkrxSIoh_ggOvg.jpg">
-                </div>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABY7NwkWEJIfXsn6t3Li4bGSCQ1nEErPisI5ZZtXlC-_VRBZOUrhWK5X3vt3t6SR_cpgVhCwxgQqFFDJhk62Kk8hawOnYGZMr0LKeLczMFV2zalCFjkcdLksvT4HB2LEi6LFyruyk3Uu0LmNGsHfC2A8Bly60smr_3sDbz4RruXcklPOG1qYq9wUVu3zfaiwNvqmG4b8aFA.jpg">
-                </div>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABemXHOga9feFnOux6I2YyACBD94wvM7N3vcTGIfMpQ_BcaXeoeM9XyzdVdamKtxt0SHXZfvsl6czcp3E48tXMLtHBxuQsh1BjHtPGgJDZ81je_FjItINiqzLtir0A30s_e4KR8G3d7AYAPDjZVOY97bNpzNqtkcHcGp7fGnJByVCps1uLfG9U9tK3Ma1A_3JbRt0NiT2_Q.jpg">
-                </div>
-                <div class="item">
-                    <img src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABVxuRB932hvre-XP0gh6ar5ztoR3Oe3QjKHkyvcDnRak2MKXOrx5H7mFQSvggefMFOppwEs7ZCCpiqrJ_CYGvtvYB9NpU4SWUtNO6uV2u-DTID267AcHjHcGvGBQJ1ufddDkxcGOZyi5MlOQ5QUmBun4652FbYUnib3zMYQDgcna_Pvz8y_HO5fbokxezrRR1JZAAiqFSQ.jpg">
-                </div>
-                <a href="#section1" class="arrow__btn">›</a>
-            </section>
+
         </div>
-        </div>
+        <!-- Slider -->
+        <div style="height: 2vw;"></div>
+        <section>
+          <div class="row container-fluid" id="containerMain">
+            <div class="header">
+              <h3 class="title">Popular in Netflix</h3>
+              <div class="progress-bar"></div>
+            </div>
+            <div class="container">
+              <button class="handle left-handle">
+                <div class="text">&#8249;</div>
+              </button>
+              <div class="slider">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVhEQ3GFEU33XRBiBIlTINqwOH_G8x-qSDRAWb_IZcFcjjf3lmPJCMW2Y4iMFJ3mLDvk0azs-oHGNdQLgVRiHhozkbIcQMl0tt_Cd5vqortyY2iicR13g_vj_WxwbUjtaUG8NfGzrV-3vtTb8y7YRJHeoibgQyTEk1CsJVtDrQLTF_9D4f7BExWfkxNh5YBUHo2AhLQomWFjsEcpucFa3BlJFS_Vd4sEzObp38RO0AD4lNXpk8JHNCZAAbojmzlNB-fVIVbzkEFFDJ9OOZE3jkzAXyL0oYtUFw3PqZw1Xjtt0pWLpOT1DdfgmdmAUAen-C5vc1Rxdnc1PLS-LuJZY1cbJsb4jV5GfFsQ7tbBtTrAiA.jpg?r=d1f">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABR5SZ4P77rbaX2hIqk6mgiltUvlSL0wlX7ehD5ycSf5EfqpS8PKuENnWzPMVD6XsLmiPjT9AMbM0VGfQaXvQGCuh-sl-TqBzFP0DLYIF07gZb3MgkLS8WwtcW6YCntDlqy_G.jpg?r=250">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABc6Xpb11nXvhk7JdqdQ3FUX1R1aloVBnSpd0Giywv6F5tOzS_EHs0yrpALDRTEIChz-tJrwnvHNyq_pMXTS828mwEBpazG38yW8.webp?r=cbe">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbBd2bJ0ZSVS0ne2IhdNGD_ikrXX7hTXy2em6zkZE8TQqU09CEktjQD0CaaVIs1hMMkN07LL19hQkFRY4qvmM_qqirfh3atEqaE.webp?r=83b">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbBd2bJ0ZSVS0ne2IhdNGD_ikrXX7hTXy2em6zkZE8TQqU09CEktjQD0CaaVIs1hMMkN07LL19hQkFRY4qvmM_qqirfh3atEqaE.webp?r=83b">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSXyUvOksa5MAca1JieIvaTMoCL317eFTzH_G5nUmvShM3a5HyzX56S5hYPnUXHf62A5IIyTwLxinibromH_Z9QyJOWbRnQ8Kc0.webp?r=dd3">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABd6QpIiUcFe4IwLpYYhlnfXm1gI_6XB4HA1KYtvbl8Hjp295Pg218qcqH9xHYEVrjSEUw4zmOTVfRk1wbwmPQ6Quk8okZdQcxB20eudMelGi-xu9OnlHDxaa3UwHkYbYw_va.jpg?r=1b2">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRhmEMBjtSWIWuDRXtrcQ4sD0p7EYT9Wy6PryS06-KYA71lmOHETJmPEh3bRZAado4aTONL6BHPUdVhZ4QDHmOraPdIQjl3LmgqCRfrpHakBQm0Ez4mGAFyo6jtWvA-UYOdp.jpg?r=a86">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRhmEMBjtSWIWuDRXtrcQ4sD0p7EYT9Wy6PryS06-KYA71lmOHETJmPEh3bRZAado4aTONL6BHPUdVhZ4QDHmOraPdIQjl3LmgqCRfrpHakBQm0Ez4mGAFyo6jtWvA-UYOdp.jpg?r=a86">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZap16KO2d4rqDuHab76pg29BxmOIQOwoUnqRYehFtXcFhY6utrk9pyuJq9yN_H6wYh_zGOKdxxz2CeVF62_69EsGuI9hLU-B7Mh6WCAvPX2Lo6xE6JrZy3jHqlkh1ERTk3M.jpg?r=41a">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVhEQ3GFEU33XRBiBIlTINqwOH_G8x-qSDRAWb_IZcFcjjf3lmPJCMW2Y4iMFJ3mLDvk0azs-oHGNdQLgVRiHhozkbIcQMl0tt_Cd5vqortyY2iicR13g_vj_WxwbUjtaUG8NfGzrV-3vtTb8y7YRJHeoibgQyTEk1CsJVtDrQLTF_9D4f7BExWfkxNh5YBUHo2AhLQomWFjsEcpucFa3BlJFS_Vd4sEzObp38RO0AD4lNXpk8JHNCZAAbojmzlNB-fVIVbzkEFFDJ9OOZE3jkzAXyL0oYtUFw3PqZw1Xjtt0pWLpOT1DdfgmdmAUAen-C5vc1Rxdnc1PLS-LuJZY1cbJsb4jV5GfFsQ7tbBtTrAiA.jpg?r=d1f">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa393q1SLIJL9jOap5S2qHhOkZAGkC13mx910yZV_PTPFUH5RRnysbsg-vhBdix-559a5evg2ZzR7C8r-d1kqJABmN3WmwKZwuUbGqr4t5SoiCAMXdt0XQrP20ySoGNxMkwh1o4z_5A32WE-9-mXmMMDCN21j5-nyk4.webp?r=7bc">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcJdx3ogsyfY24BQQciCx-P0EtbaPlZIYMZpeRgQ-g8qEwouk6XMilFzeqAV_a2qsR3RPF6aMfsQxCdXVXVaVaZwawhU-mxja274UGEash0Ontk71j7rC15QCVBBTv7FECsXxQ8ELiZGBHddhg-pi-S7Xc6ObPR6_4UcohtENG4oiEfThKzLviMFq-2Bop8.jpg?r=806">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQQSsHnxMtNfdfAdsX_Vj708hUSb-7gLEjLOmRDHMEVfkWhHa0t3OEOB3mqZaDixEBS_0gStHjnrj1pOcughDNipPopLk6ScGu6qqkdG3f_bw8IwUBnlrUl8RpeUMyylKZeuZG3V7_RFYsSItx91pzZt5S6YbECYCHTsVqK_ZqrOjjL63b34fpG4zKDf1Fc.jpg?r=57f">
+                <img
+                  src="http://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRQS9L4Di1Vm1We1OzLup9gwWnTh5P7P0VWLRoswhekyFAi0JD4lERzQatjN6q3qIF9OZZz9yugpd2As--D8pORXqxLHvKeaqpb09_C1y9eYjzzHdYqPTvun86eqqgvUH-gUZpggptEWpFKhFk4DIhDNRHhLVoBQ2_hdDNL4F4eOqwxDZwPte8TtAOW3nC38aAJYJg8L1ezq_dQadUVrZJMFbV-h0HL_tDHsVwquO34O03bAdzdvAVoBHla-K0-2mTqE3DAZhMndgsWjBKdY8tWmeBOAsBIpcyB3hoknDFw8s9I8INPbTL83DnAVJqRXfqZYC0pqrjwLcpeMkv1TVFd1IelT2Z7P1dRXYDqKJCeS8l6CmXJCjMidFsy1ds7-8zYpHZzhgkEfV5qRGMtxtXK7QIRakCfvpuUJ4FbspHP0T2Jm0Fz-3m_3iFW-I3PaECqGqisL.jpg?r=3ae">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdRzP4-0pFyX0uC2V2AcfZuKF-WIQA0vtgaRKEj1cT5HGvmYtr3CsFoqHQOp8el27VziX2KBzBeWVeP9YNk-AOh6AxeXYL-ljqSq4wby7HFvVcKR9vnhldpa4UCx0gYhx-n9.jpg?r=f02">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTTT4eXLdcp0lhxOgkw6Kg0dThIHs5UX4Xzq1HdayTRGK7Z9KNV6vNWbRxut1108XX8g-Rp13ytxgKpM-B8sXxiZen_RMDkJSmk.webp?r=68f">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZ3I954wM01JgXLed_awur8jfc9AH65vL-erC0BASmpOX8A0sxHM14Ic35Emp492mCpjQztvZZ4cTvrxxmgg_8BK3JDU3DdyW5fIrBiCegy9tfs8kek1IMpvOVTqq9nYmAN4.jpg?r=983">
+              </div>
+              <button class="handle right-handle">
+                <div class="text">&#8250;</div>
+              </button>
+            </div>
+          </div>
+          <div class="row container-fluid" id="containerMain">
+            <div class="header">
+              <h3 class="title">Popular in Netflix</h3>
+              <div class="progress-bar"></div>
+            </div>
+            <div class="container">
+              <button class="handle left-handle">
+                <div class="text">&#8249;</div>
+              </button>
+              <div class="slider">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYRQlquGRxFK-6c0q4ifnyG5lA1BB9UBKB3NzLJiHG6MO7UGulXJ9xyvJw6cR92T1go5ywvwfHfAol4afWk1RZ8howcDHgWBBxQSDR4yr7KMhyFEXn7TCAN7cov58MMFSytN.jpg?r=6e3">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXUUAulWVapLBkpFcHwbIVGeKaEeC3x_5ncvHYO9QA8PSXwG59UdCWoIWHpS2Fjkb9BczUlOGHrhNoxjpGkIR0a59_jh1heSwJo.webp?r=e87">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQQSsHnxMtNfdfAdsX_Vj708hUSb-7gLEjLOmRDHMEVfkWhHa0t3OEOB3mqZaDixEBS_0gStHjnrj1pOcughDNipPopLk6ScGu6qqkdG3f_bw8IwUBnlrUl8RpeUMyylKZeuZG3V7_RFYsSItx91pzZt5S6YbECYCHTsVqK_ZqrOjjL63b34fpG4zKDf1Fc.jpg?r=57f">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbkmECSqH3S1mi6t8prkC73SQiD8YR4DDuV4aQA90B0mzK8WEdOgbsBBzUoHQFLNS_XtO1JLmUeQJLpWNdAm--O1179LyiQyjX0.webp?r=fce">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABanN3jMkikmRczJ7RSNvIZo_-9tqePJ8JSa02KsAeuzPh3I0SAJfX0NfJ7A0GNCUD3a-RBUiBzUwyMW60aGb8dF1awTP008uVfQvy_uMADIVf9E9utTj5MYjjEtCkOGgIjl3.jpg?r=fe5">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWrdYBjgvxmWMdKhqh6FqtlaqiZouuwHbvySxUinjjGn5sOXIMJ93cCPk6qUdYoUQkkqLxMzWzk3R8_ySaWoZwhYKK7MmvK7Gdc.webp?r=2f0">
+                <!--  -->
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSFQw0HuCOwGP0LYnrgMGQRJSwkr9niDur0aMJ7Eib4pc9Y7oGmFlZ9YlWIdInKQHkNYWT5yVUW5A39hMR1QayvA3bg2vZUWksE.webp?r=ce5">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRxDXw80LCh8AnMBmKGLo4UQ_ZsfOYdtMtefihRtollTFpjiWYvDHE9_U6b09QGf6HFedJV2Gu_qaovLacqp0x6LSGK7Ksqz4D5zJYi78kM16ANHt9jyxi3cKoqDtMbbU1Xu.jpg?r=524">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXR6S0Y93tPTNe7F6Bi3X3EYmbahLaNNw-9PO_E_7771WPQ1kAddehYhNn7FcQorUt9xg_xIhPfvivqOpTS7Oa4cPPYSNe9MHUopNTfUJhajFG6MH2usPLBu2BUb0Z0eontc.jpg?r=ea6">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTnVhiua5bU8C_aHEdSLY5XLS7_W99gHAsKRDuo4_yG8OH4bFdTTQ0zko38xz5nQ4BKXfT62_b_xWsN0D8K8su8KTUuH1Lh7hPa6RFuK5Ug6LuMbEwZIyGZNDGzsw7clpPug.jpg?r=b0b">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRI61_cw4yCSjG0i1XyD97uGjs7oq5umy8juvLgR-GnDp9slCQUrMRmQpkX8oreWvZn3rwalRuZyel3n4sJ4J7gJ9QAciEEndxY1SSSdcxBGrDbJqQEBHuZuDaNEkcATVaF7.jpg?r=7e3">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZVPyEhghtcJc7HKwHk6Hyde7IRp9a6qiECbsrhisIbOv9yvz8vvE20e8VIn1R0zv_wATi4gvILtQgCP1LslURq5NnloLZbQyeys90itTMuzMR53m8Bxxy7M5y-kF_1ns99s.jpg?r=335">
+                <!--  -->
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSKYbo8qXC-kHPrLTmiC4ffA4aesyfkoaopJvSal7DvspRwYzweleWjpCL2vcOVWGfp_vpDnUJ0OlE9xx9h3TyY_K_QfAFM01nc.webp?r=b48">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVjXTINQ1f2GtY1ydTVNMsbeQxbIrOjCwPE-P9NU78aQNgIc3tPk-1XggkebkrWdWsqdB8O4ANSVWT0XmNyX-x3U52ARPHRllLli6IK1pfln1rJ8scrhTIfilKzZN5YT7eB4.jpg?r=a72">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZu3a_V13TReRsPokpc85ZH0L-NXLtcGYDazc0yrkrYgN5x4hjmfbqwvCoOA_Z78MKjeHh3SczRXzdhX5w7jWeztzOMQzsdqcWI.webp?r=e28">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU-uq3Uz-lbyvvAOhD8E-DwQhit4ty00OTyPypLbEWLUn3-PL8Rpk_kAduqHERqGv3zyX4-a13MOf1HaG_22CLlFlmYT9_mc_Qc.webp?r=3c4">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTw-IchmBhH_bCXVZIQYwI19nnd0NQBDxJFQmTokzIUwS6d52SgxrRHD-nT92qjDvCzRxinykvfNeV_oJ4ttAo4rB5df1SAG65L3jhCbMn0lt4iFD7gZ-T-Hncx159z0Lu9y.jpg?r=48d">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABR_rFys4L8r5ihv5isdgfGNs0pdRveM0-yGhOtXY12ejr9omotxyszyly_C9fxoJ79FIKCm3YlaGVvF5gTz64P1LTz49Y5wOw_s8OIYxne_-4SgedhsnP9Aqh5s_jaaYWJu8.jpg?r=787">
+                <!--  -->
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTrVVWswxzdC8X-IsUZZ0zA2M8_68Oettph1h4HAYzaKGQOl_fCTC5uF6DV5J-S2kpUpB4jCoN_ThzsNHrae26Zb-W8iucTnD2OoohuhWb0PfpZti7pBnBre0r1xD5K2nTk1.jpg?r=c3c">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUz_J0N5uH3gc4w7I1RWhEY2WtTERCs__Wo9UzHceFhZbVoCjSfj_qKAWlffHIXuzlmnbsOzwDie2xq0p-TorTUhNSTjDk5WBIyH0MjG2YRlupVENl1RWzOVWQ7BLCH4-Xsk.jpg?r=592">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbniiQENGK_1YfLm2Ana2il2H-AJRgxMQjwkQufDmk03ln_XL9znRgQMSLJFs7GUfpcXO1jKCb-P_czUukCSNLh6dJmvFogKZLx1oZxVDtIXMMNhgry4iF78bK5vpxpwrtFh.jpg?r=614">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXIqcp9E4VV2cc_l6Of597AIa4iwaM0jqgFhC1HOJV14SXhSjKE_w69ulN7Smxa355vIENQ6y0PD8cDjgC7OrR1xWrj2AiQXzzc.webp?r=578">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZi_RqpT84KU9PuLqluo8QNslnXT8Hu2_bME3ez2GFxUqc-CdICtULofUMFIpTV_EO1tghUWNSLzXeqhWzYDdSL2ifiUB0eKrn8.webp?r=01d">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABT10SHDtf5jsFH_a8fxCOcnIgDzLTBJNkpHIrSxMchJPb4mlEOoEQQu5-ACKVGCcHgkwx0gwLXzpPwwec3chgzuY7UbmkkcM9MA.webp?r=dfb">
+              </div>  
+              <button class="handle right-handle">
+                <div class="text">&#8250;</div>
+              </button>
+            </div>
+          </div>
+          
+          <div class="row container-fluid" id="containerMain">
+            <div class="header">
+              <h3 class="title">TV Sci-Fi & Horror</h3>
+              <div class="progress-bar"></div>
+            </div>
+            <div class="container">
+              <button class="handle left-handle">
+                <div class="text">&#8249;</div>
+              </button>
+              <div class="slider">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSPgeVmuwUEncdyxxwWu92YQXSEePib1qsOrfIwM3VdU--ruai8tYUyGGv_zGOT1Ac_fwLuOWMb9WyW5rJGA95Wl7xCc4dnNEyo.webp?r=75f">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSx8twFI4ms75IzU9tQzY3m6YB-uWbKKlhsuByhw2SUcUrULtyqp50DL0P8w09fv7hBbQfq7j1FyaANsTGhvNVxeYiRqq_u1cXNcLX-BN9KOL0AZYzuBsEzREJ-OJXr6JrBp.jpg?r=c46">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTD5ifjXNHmE_1bPrQaNbSrBZ4agkeCsQvz_UAAm_AiHv1bAfhVDEiE5Om2_7InTVGImifWCct1azW-CBdYlV4kUAE67-8lae5H0O8tWz1UKihGGJxAv07GZyJdjQSEdtCMR.jpg?r=6c0">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZdPgIliBzQC08HkMRXdAa0CcGRwqAsLs_TNUMOdwJl4Sx3k1xuNcmmnARYAG6lIl22b8KkJD9pCLG65hFEY-gzjyree985hQAfxqalVSzhWRb_fD-aNC4cbCPtyXPvrgcbiXR9RFq5_j7kTTPrtSHqf6qC_V18XEansRZ1b4kkC1s1bAb4N5rrvKaMC-4rm90LoxFhHx1I86csSYuTMnAjp-ToDaucdTR7-_c8ajvgqU0Q5iNjlq-rmMWUgPpYwLwvBmHyWE6CyDZ5_Jidz-UvB6VmHhnaYA2JvMLJ1C-RiewMVYT4.jpg?r=471">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTGVubI_4X9ul2WmkcW0RAWY96pslLPK9eVkZ3_3Pj3YSbf07JKzlayoTlt3izAfeiaXEgYNWOt9FvhwCcfUPhrLzQ02mlUnfrCf-KtsUPyrlbpiUYgVCfeFzwqNkRPVNEta.jpg?r=1e8">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVhEQ3GFEU33XRBiBIlTINqwOH_G8x-qSDRAWb_IZcFcjjf3lmPJCMW2Y4iMFJ3mLDvk0azs-oHGNdQLgVRiHhozkbIcQMl0tt_Cd5vqortyY2iicR13g_vj_WxwbUjtaUG8NfGzrV-3vtTb8y7YRJHeoibgQyTEk1CsJVtDrQLTF_9D4f7BExWfkxNh5YBUHo2AhLQomWFjsEcpucFa3BlJFS_Vd4sEzObp38RO0AD4lNXpk8JHNCZAAbojmzlNB-fVIVbzkEFFDJ9OOZE3jkzAXyL0oYtUFw3PqZw1Xjtt0pWLpOT1DdfgmdmAUAen-C5vc1Rxdnc1PLS-LuJZY1cbJsb4jV5GfFsQ7tbBtTrAiA.jpg?r=d1f">
+                <!--  -->
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcgYodEJI_RKlGxkh1KVH4Av767Pbm56mvaTc3sjY-R9LcOfLfabwLTVIXMDXqhSy-vVMmQpmFvY44lLzQnJ6waW-jNjwxrtShAniDzGQxvQgv1F5ekEflzdCrCIhnVNB8K_6a5CYrJ9fet7AOLPF2HzNAiyjNNc44Y-YnoEVpZ-BJNlj7PP3P3f6pXfOIE.jpg?r=1a2">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZPI7fctI_D75h3cYfKKGYu6ECt1_7FcuI31uKAHnetgzwWESgSO6tpmWNHKONIYW33zvmXn1O2Ha_r-Mzb6jutF-BKp3UNvXJtCxJ8oM6QUIJ0MN-xGrk7XcNFm62cu7yDGnd3dI0xKDO61Y1iFNSFzKVhpw2OcsK4XRxcw1rau7_lGheq_wo8WB9DJ8IMSK2rTAdOmk47TN-VKGMwbQnRYtZDRk6lpXczPxfbrL9DyUO2H4SOW2-MtePHJPvw2Xi-M068gWHQWmvkq_PgWIcmgmF37iukpwaoCnctZMiI-y4nSIRQ0wKZNMzw8luFa6Y3uNlmE50agh6Zt52G8f9UP7s-VSTVSPEm9tmh21FOUnyDVsfqrxjDTPV-lSgK7V_pKCETqSGBQO3MHKKnuVqUD7AZXQVkXAxPL-7g9S4f5TuqOYPpmf0L_fZRP7Gsbgva8pHt3.jpg?r=5e1">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABagAdr7PvQIhFVLOkQA40RgFjf_tM9ea5tOiBOIIdbloFhnXIbcb_9dmGMiU8xrZ-F_ypnbN5tPTCTz4XiMqWZoOHNGWk7f-kMxZLDWsJsXNbQdZLM72i2x2q5t9mdE3RUB1.jpg?r=690">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdPy2ZRf1_7Njh-cAwa0b_aPupZ_2VsJcLghRvXv2AA-pVowDLnDzBMa3hjt9S1IYc2e4H_qmyN3IAOXgwaHFYDlK_d8XYfxRcfHPRFsDc3FJLrzF23AzyF_xlclwUX6QiMy.jpg?r=c5f">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcE2Q6ZQv-28y6EhLvgqZwmy6w50p0W6OcKvVk-PILl5psajTCkAzGQpQD2imnzzDR3VQgxjH52uZDT3EdOyj7EJ-kSHVXgjJr0.webp?r=82f">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYG8Dd4woWgymDuHsBvKNatmIU7GbxY-0-voW5T364KjidaHwIXGbhs4XzZnjI7Q9XvosUTMhPlLFPgvxCj1cjvGRf6P4rWZxS0.webp?r=a58">
+                <!--  -->
+              </div>
+              <button class="handle right-handle">
+                <div class="text">&#8250;</div>
+              </button>
+            </div>
+          </div>
+          <div class="row container-fluid" id="containerMain">
+            <div class="header">
+              <h3 class="title">My List</h3>
+              <div class="progress-bar"></div>
+            </div>
+            <div class="container">
+              <button class="handle left-handle">
+                <div class="text">&#8249;</div>
+              </button>
+              <div class="slider">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZP02TbVpuDoCLLE8L0NcmFTCh56Ya5w3RG_obT3V0aVP3XfiVD4sQFlEXCT5vnx2qIud478dZJ8Cczm7eCf_lSXWtMBnwBmZrdXK19ijfOPmjkGEmmExsM6VYKyX8TBhwl4.jpg?r=a9f">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYF76qWttyPS0LL7S5YSND6uxbFbBvrRDNcTnJtXUgBzwq4SlVaq6rKa890FVjKROMP--8wa4YjpQ7iZc1EgcEupkWt5P067GmFMS7BNnchBjLOEAjjC9jQjLmTJrt3bCW6q.jpg?r=b27">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWzVduPeZ3Ovp2P0Zcv3jCpjDr4aSaREhOH28hf2rVDNOgeLTqvK4ffOFr2YPn9rnGbZCj-itNH4F-yoCH6qHDnrRHinMqXZRSSlOKHF99skNl5T_wMQfA9vdumPzmDNFH85.jpg?r=2c6">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYMxS0ghAYoMXUgLE3BH3wN-QUYL8hVChhh-Shb0odBKZoXeHLyzWTO5xYsLo680O8VK29TpJpfne7o8cRTaUNvvkNz_QoaFdfYLOgOznf_Zvfp26x9B8_sdSFMsqustOa46.jpg?r=141">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABePagAWDoKes6YLxCcSSM0R6vt8dfhV3nffNPQRAW_jYzcSIqtnQd_cM18DW2SyM75e93yqE9MQNuIsEB-4WTRFbQkPFgtZvC1bBCP3Fgbb6Est1iH9flsD-gPq-N8WVYyGt.jpg?r=34d">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWjr5tWZDoBE_9oWOTtJPqyxkhBHukU9rtU0ncvtrN5OKZx4hEna5qng1qaP6Ibv9oUkm6_jVmNL16_3aSSeOOx9G-zpDuA3DpI.webp?r=f3d">
+                <!--  -->
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcT0f0nzolJNvHO_0BoiuXm6UKNoBIKjAFA8M9-p8-p3o_qyfsy9tcTA-djieHaD6sz9wFt4v9TCoXurl1Mwmpyed2KmCbxLEXAjSj-_sQF9XgzNJvOVK2IC8nAwzt0OVSOA.jpg?r=807">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABV8-G1ztP8JtNCE5kX9y8PGtRx1N0pI4TmW2YCzmLdqyuOPtGE1zP7868cWSlqvKviuw39srtp3GSnNglsncuEjDrHSinj8bBC0pej1NW2unS4klW23KagjG1mq4uAJp-6cG.jpg?r=7a6">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ4UK1W5DcmsI5yElsPzeGrwy_u4XtQwMR9xbzwFgnNRDIeIefB5xq7p7-xvRqBdT79RgMZEDETDjhAkno43ATce2U7Zc5DWEk08GDlz8ol8YRh4_DrdrsNmwmbp6jW0YmJa.jpg?r=b11">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWe6rvM-YTmpa3f62u9y_bJj4uECDCZzPjyI1LFfxeIL2fCPueiWWpM3CSJ2dn9kD9lDC4jNudefwN7tCavZsU06rmrVpNxXvE4.webp?r=aa5">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVxKNJp3EUhD_oWRVD6dhb9GDAyPZlgwWGdlQGfQeTxNNjwzfsYkEx9pPyyvSuFrI3EO4XTRz9CKdmRXM7bZvmHUzBzKYMnal1ZLpAIZTnnn6WKeZORPMCKbXHruOBvwDksv.jpg?r=a63">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVaTiG_BHREbio-If4huFr8MmnDaqU7rDtTSih18eHVMyD77meaYXCarKRePsNToZknXF4VSs8aCiu9Ha0K7Vc3mKnI7KImzH5Y.webp?r=19e">
+                <!--  -->
+              </div>
+              <button class="handle right-handle">
+                <div class="text">&#8250;</div>
+              </button>
+            </div>
+          </div>
+          <div class="row container-fluid" id="containerMain">
+            <div class="header">
+              <h3 class="title">Teen TV Shows</h3>
+              <div class="progress-bar"></div>
+            </div>
+            <div class="container">
+              <button class="handle left-handle">
+                <div class="text">&#8249;</div>
+              </button>
+              <div class="slider">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcW8Wt_xF6rKkMrWeVVNhu2NCnfibcUafVD_kw_dUkCiIffqs0qKinVYsEaeltwVIDPfVLXXCP3kE2NbGgLJPZPJGDTTwxmwv3g4WapQMkFa_JuXuesDs2fKD1ruRLUwCjFW.jpg?r=9c7">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABd4qy_hD6oCjlOwuVl1LK6-KGoUdPZ4CRoehgySw_ATONGGL6Ww1eHEpsFcfLVn__Pun1PTUs0xl6HqegM32LPHfRE-glHyXOUYxUUDGAaZfAWa9kWxnFT8_LqESsLA-y0xa.jpg?r=cb8">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcVz7eGUvU9mNnXnRJ9XrNdPtHKmjTim0tq5eaDCUg_hWayw_wHYaYkX0qohmJU0BJkoJnqrcQVmTwnoX3vXebycawqFGRw8UwFqagm4NRRUBnNq6S19t6XNJigs-jxm6Maf.jpg?r=cee">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSbZUtkkJzhoBkXj2Fs8EJ7qMJsW6nMn_X0w-xljhHzsAfhxLQa7uQRPR_i0W9g1pBtd14OPAyKaBURO3Gwdhnn9zw54oy9S3wPVaPBMPvTTXHrLO5evq5HrsrAoXbhFYrSP.jpg?r=e4e">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXC5GgAltH1-HrFWtvJOFCc6DKY6rVHV7l4gggL9JGF84UTKhZRZQ-nyp7axEhEe359HnHTmgjHe9FPfVCjBPIbk8pDSegNl7rirtG8TuyM0tUi9awbLFvZJOf8DzitQofRs.jpg?r=63c">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa3IC_4NEM9BPnW1DF6eo36jJTV1mknNgsj_epYqs1th1b4eyIJG9sSffOuRDxuawJCVyQzI-FlCQPbGKeu13DDle598siM-L7lk2Smra-exgr1xHNQw2rfdBy-6EPU7QLCY.jpg?r=a13">
+                <!--  -->
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWRjzfdTTbZy3WnfQ4JfAGuzQ7V44hsvT2ILd-2HKEH6m0F229oMiVcyYsYOJLU9orNjsnE6UXTFswE0xqpRbHSXzAo3GPb2CYk.webp?r=38f">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYR-YudtFQKqkUSGq7O1L2quxxcDhZmze_qd-iicPqc16Zyhy5g2FxLkouEtVGs2fYVxZOU9pHGuF58YnRhMPRiANVB25r9hClQe5nunNpfmKKZPcq2BAErlgPelmpYAOupb.jpg?r=e43">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZQA7MlOfJrM_21M3J-j82fhNlL2kcJIvR1hBLRDtK9wSfgNEpgxwOdQA12gWfB3GTtCK2x8_xkEdglHsx-p6ech7M4mNGT0tKs.webp?r=482">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABepVsVQMbV1mlQSE7ESVUVm3xLs981kYBqdp5ZE_2j8bFOh46GqEObJ8XFJIvRgQWKVAeojWY3u0Wr6CTo8SOl5DU_lXacnANxM.webp?r=65f">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABepVsVQMbV1mlQSE7ESVUVm3xLs981kYBqdp5ZE_2j8bFOh46GqEObJ8XFJIvRgQWKVAeojWY3u0Wr6CTo8SOl5DU_lXacnANxM.webp?r=65f">
+                <img
+                  src="https://occ-0-6661-3996.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYIip_u6gESIriDqt677H3rOhOgpE0C-O9BFhs_5COTyhrLd2VF8ontHOoZMxqGFd3RCL-cvrlutUl_Ine_kwmPqTjzxFCwS-3o.webp?r=53b">
+                <!--  -->
+              </div>
+              <button class="handle right-handle">
+                <div class="text">&#8250;</div>
+              </button>
+            </div>
+          </div>
+
+        </section>
       </div>
-      
-    </div>
-    <!-- Footer -->
-    <footer class="container-lg container-fluid mt-5 mb-lg-5">
-      <div id="mainFotter" class=" text-white">
-        <!-- Social Media -->
-        <ul class="list-group list-group-horizontal">
-          <li><a class="footerIcon" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-          <li><a class="footerIcon" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a class="footerIcon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a class="footerIcon" href="#"><i class="fa-brands fa-youtube"></i></a></li>
-        </ul>
-        <!-- Links -->
-        <div class="row-cols-sm-1 row-cols-1 row-cols-md-4  row-cols-lg-4 row" id="footerLinks">
-          <dov class="col">
-            <a class="footerLinkItem" href="#">Audio Description</a>
-            <a class="footerLinkItem" href="#">Investor Relations</a>
-            <a class="footerLinkItem" href="#">Legal Notices</a>
-          </dov>
-          <dov class="col">
-            <a class="footerLinkItem" href="#">Help Center</a>
-            <a class="footerLinkItem" href="#">Jops</a>
-            <a class="footerLinkItem" href="#">Cookie Preferences</a>
-          </dov>
-          <dov class="col">
-            <a class="footerLinkItem" href="#">Gift Cards</a>
-            <a class="footerLinkItem" href="#">Terms of Use</a>
-            <a class="footerLinkItem" href="#">Corporate Information</a>
-          </dov>
-          <dov class="col">
-            <a class="footerLinkItem" href="#">Media Center</a>
-            <a class="footerLinkItem" href="#">Privacy</a>
-            <a class="footerLinkItem" href="#">Contact Us</a>
-          </dov>
+
+
+      <!-- Footer -->
+      <footer class="container-lg container-fluid mt-5 mb-lg-5">
+        <div id="mainFotter" class=" text-white">
+          <!-- Social Media -->
+          <ul class="list-group list-group-horizontal">
+            <li><a class="footerIcon" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a class="footerIcon" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class="footerIcon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a class="footerIcon" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+          <!-- Links -->
+          <div class="row-cols-sm-1 row-cols-1 row-cols-md-4  row-cols-lg-4 row" id="footerLinks">
+            <dov class="col">
+              <a class="footerLinkItem" href="#">Audio Description</a>
+              <a class="footerLinkItem" href="#">Investor Relations</a>
+              <a class="footerLinkItem" href="#">Legal Notices</a>
+            </dov>
+            <dov class="col">
+              <a class="footerLinkItem" href="#">Help Center</a>
+              <a class="footerLinkItem" href="#">Jops</a>
+              <a class="footerLinkItem" href="#">Cookie Preferences</a>
+            </dov>
+            <dov class="col">
+              <a class="footerLinkItem" href="#">Gift Cards</a>
+              <a class="footerLinkItem" href="#">Terms of Use</a>
+              <a class="footerLinkItem" href="#">Corporate Information</a>
+            </dov>
+            <dov class="col">
+              <a class="footerLinkItem" href="#">Media Center</a>
+              <a class="footerLinkItem" href="#">Privacy</a>
+              <a class="footerLinkItem" href="#">Contact Us</a>
+            </dov>
+          </div>
+          <!-- Button Code -->
+          <div>
+            <button id="serviceBtn" class="btn mt-4">Service Code</button>
+          </div>
+          <!-- INC -->
+          <div id="INC" class="mt-4">
+            © 1997-2023 Netflix, Inc.
+          </div>
         </div>
-        <!-- Button Code -->
-        <div>
-          <button id="serviceBtn" class="btn mt-4">Service Code</button>
-        </div>
-        <!-- INC -->
-        <div id="INC" class="mt-4">
-          © 1997-2023 Netflix, Inc.
-        </div>
-      </div>
-    </footer>
+      </footer>
   </section>
 
   <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>

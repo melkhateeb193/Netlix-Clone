@@ -1,0 +1,170 @@
+.navbar {
+    padding: 0px 57px;
+    height: 4.25rem;
+  }
+  
+  .navbar-brand {
+    width: 6rem;
+  }
+  
+  .container-fluid {
+    padding: 0;
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #fff;
+  }
+  
+  .checked {
+    font-weight: bolder;
+  }
+  
+  .navbar__btn {
+    color: #fff;
+    border: 0;
+    text-decoration: none;
+  }
+  
+  .notifcations {
+    position: relative;
+    display: inline-block;
+  }
+  .notifcations__body {
+    display: none;
+    position: absolute;
+    top: 3.125rem;
+    right: -0.8rem;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 3px solid white;
+    width: 25.625rem;
+    height: 6.125rem;
+    z-index: 1;
+  }
+  .notifcations__body--arrow {
+    position: absolute;
+    right: 0;
+    top: -2rem;
+  }
+  .notifcations__grid {
+    display: flex;
+  }
+  .notifcations__grid--img {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  .notifcations__grid--section {
+    padding: 1rem 1rem 1rem 0;
+  }
+  .notifcations:hover .notifcations__body {
+    display: block;
+  }
+  
+  .nav-element {
+    margin: 0 0.5rem;
+    height: 4.25rem;
+    margin-top: 2rem;
+  }
+  
+  .secondary-navigation {
+    margin-top: 5px;
+  }
+  
+  .profile {
+    position: relative;
+    display: inline-block;
+  }
+  .profile__picture {
+    width: 30px;
+    height: 30px;
+  }
+  .profile__menu {
+    display: none;
+    position: absolute;
+    top: 3.125rem;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    width: 13.75rem;
+    height: 24rem;
+    z-index: 1;
+    font-size: 13px;
+  }
+  .profile__menu--arrow {
+    position: absolute;
+    right: 0;
+    top: -1.8rem;
+  }
+  .profile:hover .profile__menu {
+    display: block;
+  }
+  .profile__menu--list, .profile__menu--listEnd {
+    list-style-type: none;
+    padding: 0.625rem 0 0.313rem 0;
+    margin: 0;
+  }
+  .profile__menu--listItem {
+    width: 13.625rem;
+    padding: 0.313rem 0.625rem;
+  }
+  .profile__menu--listImg1 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4px;
+    margin-right: 0.625rem;
+  }
+  .profile__menu--listImg2 {
+    width: 2rem;
+    height: 1.5rem;
+    border-radius: 4px;
+    margin-right: 0.625rem;
+  }
+  .profile__menu--listEnd {
+    text-align: center;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.25);
+  }
+  .profile__menu--btn {
+    text-decoration: none;
+    color: white;
+  }
+  .profile__menu--btn:hover {
+    text-decoration: underline;
+  }
+  
+  .search {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .search img {
+    border: none;
+    background-color: #141414;
+    padding: 1px 6px;
+    height: 1.5rem;
+    position: absolute;
+  }
+  .search__icon {
+    z-index: 99;
+    padding-left: 8px !important;
+  }
+  .search__close {
+    right: 0;
+  }
+  .search input {
+    border: none;
+    font-family: inherit;
+    outline: none;
+    width: 2rem;
+    transition: 500ms width ease-in-out;
+    background-color: #141414;
+    color: #fff;
+    padding-left: 45px;
+  }
+  .search__open input {
+    width: 17rem;
+    height: 2.5rem;
+    outline: 1px solid #fff;
+    padding: 0;
+  }
+  

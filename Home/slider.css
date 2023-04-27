@@ -1,67 +1,152 @@
-html {
-  scroll-behavior: smooth;
-}
+/* slider */
 
-body {
-  margin: 0;
-  background-color: #000;
-}
-
-h1 {
-  font-family: Arial;
-  color: red;
-  text-align: center;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 100%);
-  overflow: hidden;
-  scroll-behavior: smooth;
-  padding: 0px;
-  margin-top: 5rem;
-}
-.wrapper section {
-  width: 100%;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  margin: 20px 0;
-}
-.wrapper section .item {
-  padding: 0 2px;
-  transition: 250ms all;
-}
-.wrapper section .item:hover {
-  margin: 0 40px;
-  transform: scale(1.2);
-}
-.wrapper section a {
-  position: absolute;
-  color: #fff;
-  text-decoration: none;
-  font-size: 6em;
-  background: black;
-  width: 80px;
-  padding: 20px;
-  text-align: center;
-  z-index: 1;
-}
-.wrapper section a:nth-of-type(1) {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
-}
-.wrapper section a:nth-of-type(2) {
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
-}
-
-@media only screen and (max-width: 600px) {
-  a.arrow__btn {
-    display: none;
+*, *::after, *::before {
+    box-sizing: border-box !important;
   }
-}
+  :root {
+    --handle-size: 3rem;
+    --img-gap: .25rem;
+  }
+  
+  section{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  body {
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  #containerMain{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 2vw;
+  }
+  
+  .slider {
+    --items-per-screen: 6;
+    --slider-index: 0;
+    display: flex;
+    flex-grow: 1;
+    margin: 0 var(--img-gap);
+    transform: translateX(calc(var(--slider-index) * -100%));
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .slider > img {
+    flex: 0 0 calc(100% / var(--items-per-screen));
+    max-width: calc(100% / var(--items-per-screen));
+    aspect-ratio: 16 / 9;
+    padding: var(--img-gap);
+    border-radius: 0.5rem;
+  }
+  
+  .handle {
+    border: none;
+    border-radius: .5rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: transparent;
+    z-index: 10;
+    margin: var(--img-gap) 0;
+    width: var(--handle-size);
+    cursor: pointer;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    line-height: 0;
+    transition: background-color 150ms ease-in-out;
+  }
+  
+  .left-handle {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .right-handle {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .text {
+    transition: transform 150ms ease-in-out;
+  }
+  
+  .handle:hover .text,
+  .handle:focus .text {
+    transform: scale(1.2);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem calc(var(--img-gap) * 2 + var(--handle-size));
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+  }
+  
+  .progress-bar {
+    display: flex;
+    flex-direction: row;
+    gap: .25rem;
+  }
+  
+  .progress-item {
+    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
+    height: .5rem;
+    background-color: rgba(255, 255, 255, .5);
+  }
+  
+  .progress-item.active {
+    background-color: rgba(255, 255, 255, .9);
+  }
+  
+  @media (max-width: 1000px) {
+    .slider {
+      --items-per-screen: 3;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    :root {
+      --handle-size: 2.5rem;
+      --img-gap: .5rem;
+    }
+    
+    .slider {
+      --items-per-screen: 2;
+    }
+    
+    .handle {
+      font-size: 4rem;
+    }
+    
+    .title {
+      font-size: 1rem;
+    }
+    
+    .progress-item {
+      flex: 0 0 1.5rem;
+      min-width: 1.5rem;
+      height: .5rem;
+    }
+    .progress-bar {
+      display: none;
+    }
+  }
+  
