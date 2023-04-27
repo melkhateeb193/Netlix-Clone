@@ -493,10 +493,10 @@ body {
 
 .handle {
   border: none;
-  border-radius: 1rem;
+  border-radius: .5rem;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: rgba(255, 255, 255, .25);
+  background-color: transparent;
   z-index: 10;
   margin: var(--img-gap) 0;
   width: var(--handle-size);
@@ -518,11 +518,6 @@ body {
 .right-handle {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-}
-
-.handle:hover,
-.handle:focus {
-  background-color: rgba(255, 255, 255, .5);
 }
 
 .text {
@@ -570,8 +565,30 @@ body {
 }
 
 @media (max-width: 500px) {
+  :root {
+    --handle-size: 2.5rem;
+    --img-gap: .5rem;
+  }
+  
   .slider {
     --items-per-screen: 2;
+  }
+  
+  .handle {
+    font-size: 4rem;
+  }
+  
+  .title {
+    font-size: 1rem;
+  }
+  
+  .progress-item {
+    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
+    height: .5rem;
+  }
+  .progress-bar {
+    display: none;
   }
 }
 
