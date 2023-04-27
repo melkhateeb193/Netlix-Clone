@@ -129,7 +129,6 @@ function throttle(cb, delay = 1000) {
         setTimeout(timeoutFunc, delay)
     }
 }
-
 //---------------------------------- navbar Sticky ----------------------------------------
 
 window.onscroll = function() {myFunction()};
