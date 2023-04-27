@@ -108,7 +108,7 @@
   .progress-item {
     flex: 0 0 1.5rem;
     min-width: 1.5rem;
-    height: .5rem;
+    height: .2rem;
     background-color: rgba(255, 255, 255, .5);
   }
   
@@ -120,12 +120,17 @@
     .slider {
       --items-per-screen: 3;
     }
+    .progress-item {
+      flex: 0 0 1.5rem;
+      min-width: 1.5rem;
+      height: .2rem;
+    }
   }
   
   @media (max-width: 500px) {
     :root {
       --handle-size: 2.5rem;
-      --img-gap: .5rem;
+      --img-gap: .2rem;
     }
     
     .slider {

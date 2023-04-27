@@ -55,6 +55,7 @@
   }
   .notifcations__grid--section {
     padding: 1rem 1rem 1rem 0;
+    color: white;
   }
   .notifcations:hover .notifcations__body {
     display: block;
@@ -146,7 +147,6 @@
   }
   .search__icon {
     z-index: 99;
-    padding-left: 8px !important;
   }
   .search__close {
     right: 0;
@@ -159,12 +159,11 @@
     transition: 500ms width ease-in-out;
     background-color: #141414;
     color: #fff;
-    padding-left: 45px;
   }
   .search__open input {
     width: 17rem;
     height: 2.5rem;
     outline: 1px solid #fff;
-    padding: 0;
+    padding: 0 0 0 50px;
   }
   
