@@ -107,7 +107,7 @@ body {
 }
 
 #VideoPlay {
-    margin-top: 2rem;
+    margin-top: 2vw;
     /* background-color: aqua; */
 }
 
@@ -156,11 +156,6 @@ body {
 
 
 
-
-
-#mainFotter {
-    /* margin-left: 10rem; */
-}
 
 footer .list-group {
     list-style: none;
