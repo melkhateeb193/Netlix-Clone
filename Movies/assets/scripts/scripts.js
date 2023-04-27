@@ -1,18 +1,23 @@
-//search bar
-let search = document.querySelector(".search");
-let searchIcon = document.querySelector(".search__icon");
-let searchInput = document.querySelector(".search__input");
-let searchClose = document.querySelector(".search__close");
+// Search bar
+const search = document.querySelector(".search");
+const searchIcon = document.querySelector(".search__icon");
+const searchInput = document.querySelector(".search__input");
+const searchClose = document.querySelector(".search__close");
 
 searchIcon.addEventListener("click", () => {
-    search.classList.add("search__open");
-    searchInput.focus();
-})
+  search.classList.add("search__open");
+  searchClose.style.display="block";
+  searchInput.setAttribute("placeholder","Titles, people, genres");
+  searchInput.focus();
+});
 
 searchClose.addEventListener("click", () => {
-    search.classList.remove("search__open");
-    searchInput.value = "";
-})
+  search.classList.remove("search__open");
+  searchClose.style.display="none";
+  searchInput.setAttribute("placeholder","");
+  searchInput.value = "";
+});
+
 ///////////////////////////////////////////////////////////////////////////////////
 //genres list
 let grid = document.getElementsByClassName("genres__grid")[0];
@@ -123,4 +128,22 @@ function throttle(cb, delay = 1000) {
         shouldWait = true
         setTimeout(timeoutFunc, delay)
     }
+}
+//---------------------------------- navbar Sticky ----------------------------------------
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  console.log(sticky);
+  if (window.pageYOffset > 0) {
+    navbar.classList.add("sticky")
+    navbar.style = "background-color: #141414;"
+    // document.getElementById("sliderMargin").style = "margin-top: rem;"
+  } else if(window.pageYOffset == 0) {
+    navbar.classList.remove("sticky");
+    navbar.style = "background-color: transparent;"
+  }
 }

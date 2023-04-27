@@ -184,11 +184,29 @@ body {
   padding: 0 0 0 50px;
 }
 
-.top {
+.pageBody {
   background-image: url("../images/castlevania.webp");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 50vw;
+}
+
+@media (max-width: 1350px) {
+  .pageBody {
+    background-size: 100% 50vw !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pageBody {
+    background-size: 100% 55vw !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .pageBody {
+    background-size: 100% 60vw !important;
+  }
 }
 
 .nav2 {
