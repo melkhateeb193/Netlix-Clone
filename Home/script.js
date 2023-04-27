@@ -6,11 +6,15 @@ const searchClose = document.querySelector(".search__close");
 
 searchIcon.addEventListener("click", () => {
   search.classList.add("search__open");
+  searchClose.style.display="block";
+  searchInput.setAttribute("placeholder","Titles, people, genres");
   searchInput.focus();
 });
 
 searchClose.addEventListener("click", () => {
   search.classList.remove("search__open");
+  searchClose.style.display="none";
+  searchInput.setAttribute("placeholder","");
   searchInput.value = "";
 });
 
@@ -19,8 +23,6 @@ const grid = document.querySelector(".genres__grid");
 function toggleGenres() {
   grid.style.display = grid.style.display === 'none' ? 'grid' : 'none';
 }
-
-
 
 //----------------------------------------------
 document.addEventListener("click", e => {
@@ -121,5 +123,23 @@ function throttle(cb, delay = 1000) {
     cb(...args)
     shouldWait = true
     setTimeout(timeoutFunc, delay)
+  }
+}
+//---------------------------------- navbar Sticky ----------------------------------------
+
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  console.log(sticky);
+  if (window.pageYOffset > 0) {
+    navbar.classList.add("sticky")
+    navbar.style = "background-color: #141414;"
+  } else if(window.pageYOffset == 0) {
+    navbar.classList.remove("sticky");
+    navbar.style = "background-color: transparent;"
   }
 }

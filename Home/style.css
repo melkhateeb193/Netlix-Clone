@@ -1,50 +1,10 @@
 body {
     background-color: #141414;
 }
-
-
-
-#navBar {
-    background-color: #141414;
-}
-
-#navBarContainer {
-    margin: 0rem 2rem;
-}
-
-.default-ltr-cache-mv4tc2 {
-    width: 6rem;
-    height: 2rem;
-    color: rgba(229, 9, 20, 1);
-    fill: currentColor;
-    display: block;
-}
-
-.nav-link {
-    font-size: 15px;
-    /* font-weight: bold; */
-    color: white !important;
-}
-
-.nav-link:hover {
-
-    color: #808080 !important;
-}
-
-.navRightIcons i {
-    color: white !important;
-    font-weight: bold !important;
-    font-size: 20px
-}
-
-#navRI {
-    margin: 0px 8px;
-}
-
 /* ----------------------------------------- */
 .pageBody {
     background: url("https://occ-0-4609-116.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABcyuh-KNCK3VIIWTdUmEuX8xd8mzHedzUpGdjWIPWIv-962RSoR78qAw7qNF6YXOSbAAwJNkG4jM05rqExrY3hr-eqVSeXN0-mzB.webp?r=565") no-repeat;
-    background-size: 100% 40vw !important;
+    background-size: 100% 45vw !important;
     margin-top: 0px;
 }
 
@@ -111,6 +71,9 @@ body {
     margin-left: 0.5vw;
 }
 @media (max-width: 1350px) {
+    .pageBody {
+        background-size: 100% 50vw !important;
+    }
     #btnsV2 {
         background-color: rgba(128, 128, 128, 0.8);
         margin-left: 1rem;
@@ -136,6 +99,9 @@ body {
     }
 }
 @media (max-width: 1000px) {
+    .pageBody {
+        background-size: 100% 55vw !important;
+    }
     #btnsV2 {
         background-color: rgba(128, 128, 128, 0.8);
         margin-left: 1.5rem;
@@ -161,6 +127,9 @@ body {
     }
 }
 @media (max-width: 700px) {
+    .pageBody {
+        background-size: 100% 60vw !important;
+    }
     #btnsV2 {
         background-color: rgba(128, 128, 128, 0.8);
         margin-left: 1.5rem;
