@@ -513,7 +513,7 @@ body {
 @media (max-width: 500px) {
   :root {
     --handle-size: 2.5rem;
-    --img-gap: .5rem;
+    --img-gap: .2rem;
   }
   .slider {
     --items-per-screen: 2;

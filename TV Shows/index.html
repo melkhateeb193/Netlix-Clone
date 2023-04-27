@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons/netflix icon.png">
+    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>TV Shows - Netflix</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/icons/Netflix logo.svg">
+            </a>
+            <a class="navbar-toggler navbar__btn dropdown-toggle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar1Content" aria-controls="navbar1Content" aria-expanded="false"
+                aria-label="Toggle navigation" role="button">
+                Browse
+            </a>
+            <div class="collapse navbar-collapse" id="navbar1Content">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Home/Home.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item checked">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            TV Shows
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="../Movies/index.html">
+                            Movies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/new & popular/index.html">
+                            New & Popular
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/my list/index.html">
+                            My List
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Browse by Languages/browseByLanguage.html">
+                            Browse by Languages
+                        </a>
+                    </li>
+                </ul>
+                <div class="secondary-navigation d-flex">
+                    <div class="nav-element">
+                        <div class="search">
+                            <img class="search__icon" src="./assets/icons/search.svg">
+                            <input type="text" class="search__input" autofocus placeholder="Title, people, genres">
+                            <img class="search__close" src="./assets/icons/close.svg">
+                        </div>
+                    </div>
+                    <div class="nav-element">
+                        <a class="navbar__btn" href="#">
+                            Kids
+                        </a>
+                    </div>
+                    <div class="nav-element notifcations">
+                        <a class="navbar__btn">
+                            <img src="./assets/icons/bell.svg">
+                        </a>
+                        <div class="notifcations__body">
+                            <img class="notifcations__body--arrow" src="./assets/icons/arrow down.svg">
+                            <div class="notifcations__grid">
+                                <img class="notifcations__grid--img" src="./assets/images/notifcation.jpg">
+                                <div class="notifcations__grid--section">
+                                    <div>New Arrival</div>
+                                    <div>The Diplomat</div>
+                                    <span>1 day ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-element profile">
+                        <a class="navbar__btn dropdown-toggle">
+                            <img class="profile__picture" src="./assets/icons/p1.png">
+                        </a>
+                        <div class="profile__menu">
+                            <img class="profile__menu--arrow" src="./assets/icons/arrow down.svg">
+                            <ul class="profile__menu--list">
+                                <li class="profile__menu--listItem">
+                                    <img class="profile__menu--listImg1" src="./assets/icons/p2.png">
+                                    <a class="profile__menu--btn" href="#">
+                                        User 1
+                                    </a>
+                                </li>
+                                <li class="profile__menu--listItem">
+                                    <img class="profile__menu--listImg1" src="./assets/icons/p3.png">
+                                    <a class="profile__menu--btn" href="#">
+                                        User 2
+                                    </a>
+                                </li>
+                                <li class="profile__menu--listItem">
+                                    <img class="profile__menu--listImg1" src="./assets/icons/p4.png">
+                                    <a class="profile__menu--btn" href="#">
+                                        User 3
+                                    </a>
+                                </li>
+                                <li class="profile__menu--listItem">
+                                    <img class="profile__menu--listImg1" src="./assets/icons/kids.png">
+                                    <a class="profile__menu--btn" href="#">
+                                        Kids
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="profile__menu--list">
+                                <li class="profile__menu--listItem">
+                                    <img class="profile__menu--listImg2" src="./assets/icons/pen.svg">
+                                    <a class="profile__menu--btn" href="#">
+                                        Manage Profiles
+                                    </a>
+                                </li>
+                                <li class="profile__menu--listItem">
+                                    <img class="profile__menu--listImg2" src="./assets/icons/transfer.svg">
+                                    <a class="profile__menu--btn" href="#">
+                                        Transfer Profile
+                                    </a>
+                                </li>
+                                <li class="profile__menu--listItem">
+                                    <img class="profile__menu--listImg2" src="./assets/icons/profile.svg">
+                                    <a class="profile__menu--btn" href="#">
+                                        Account
+                                    </a>
+                                </li>
+                                <li class="profile__menu--listItem">
+                                    <img class="profile__menu--listImg2" src="./assets/icons/help.svg">
+                                    <a class="profile__menu--btn" href="#">
+                                        Help Center
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="profile__menu--listEnd">
+                                <li class="profile__menu--listItem">
+                                    <a class="profile__menu--btn" href="#">
+                                        Sign out of Netflix
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="top">
+        <nav class="navbar">
+            <div class="row">
+                <div class="col">
+                    <a class="navbar-brand brand2" href="#">
+                        Movies
+                    </a>
+                </div>
+                <div class="col">
+                    <div class="genres" role="button" onclick="opengenres()">
+                        <label class="genres__label1">
+                            Genres
+                        </label>
+                        <span>
+                            <img src="./assets/icons/arrow.svg">
+                        </span>
+                    </div>
+                    <div class="genres__grid">
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Action
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Dramas
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Romance
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Anime
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Earth Month
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Sci-Fi
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Award-Winning
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Egyptian Movies
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Shorts
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Children & Family
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Fantasy
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Sports
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Classics
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Hollywood
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Stand-Up Comedy
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Comedies
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Horror
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Thriller
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Crime
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Independent
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Documentaries
+                            </a>
+                        </div>
+                        <div class="genres__grid--item">
+                            <a class="genres__grid--link" href="#">
+                                Music & Musicals
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="group__btn">
+                    <input type="radio" name="style" id="list" class="group__btn--input" checked>
+                    <label for="list">
+                        <img class="group__btn--icon" src="./assets/icons/list.svg">
+                    </label>
+                </div>
+                <div class="group__btn">
+                    <input type="radio" name="style" id="grid" class="group__btn--input">
+                    <label for="grid">
+                        <img class="group__btn--icon" src="./assets/icons/grid.svg">
+                    </label>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="title row">
+                <div class="title__space col-1"></div>
+                <div class="title__body col-7">
+                    <img class="title__body--logo" src="./assets/images/./Castlevanialogo.webp">
+                    <div class="title__body--discription">
+                        A vampire hunter fights to save a besieged city from an army of otherworldly beasts controlled
+                        by Dracula himself. Inspired by the classic video games.
+                    </div>
+                    <button class="title__body--button btn1">
+                        <img class="title__body--button__element" src="./assets/icons/play.svg">
+                        <span class="title__body--button__element btn1__text">Play</labspanel>
+                    </button>
+                    <button class="title__body--button btn2">
+                        <img class="title__body--button__element" src="./assets/icons/info.svg">
+                        <span class="title__body--button__element">More Info</span>
+                    </button>
+                </div>
+                <div class="title__aside col">
+                    <button class="title__aside--btn">
+                        <img src="./assets/icons/restart.svg">
+                    </button>
+                    <span class="title__aside--maturityRating">13+</span>
+                </div>
+            </div>
+            <div class="row container-fluid">
+                <div class="header">
+                    <h3 class="slider__title">Top Picks for User</h3>
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="container f">
+                    <button class="handle left-handle">
+                        <div class="text">&#8249;</div>
+                    </button>
+                    <div class="slider">
+                        <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                        <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                        <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                        <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                        <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                        <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                        <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                        <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                        <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                        <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                        <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                        <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                        <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                        <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                        <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                        <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                        <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                        <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                        <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                        <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                        <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                        <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                        <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                        <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                    </div>
+                    <button class="handle right-handle">
+                        <div class="text">&#8250;</div>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Trending Now</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Egyptian Movies & TV</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Continue Watching for User</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Get In On the Action</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Feel-good Comedies</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Sci-Fi Thrillers</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Award-winning Action & Adventure</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Only on Netflix</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Top 10 Movies in Egypt Today</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Raunchy Comedies</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Sci-Fi Movies</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Critically Acclaimed Dramas</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Suspenseful Movies</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Romantic Movies</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Because you liked The Lord of the Rings: The Fellowship of the Ring</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Crime Dramas</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">Inspiring Movies</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+        <div class="row container-fluid margin">
+            <div class="header">
+                <h3 class="slider__title">My List</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="container f">
+                <button class="handle left-handle">
+                    <div class="text">&#8249;</div>
+                </button>
+                <div class="slider">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=1">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=2">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=3">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=4">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=5">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=6">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=7">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=8">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=9">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=10">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=11">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=12">
+                    <img src="https://via.placeholder.com/210/FFFFFF?text=13">
+                    <img src="https://via.placeholder.com/220/FFFFFF?text=14">
+                    <img src="https://via.placeholder.com/230/FFFFFF?text=15">
+                    <img src="https://via.placeholder.com/240/FFFFFF?text=16">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=17">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=18">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=19">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=20">
+                    <img src="https://via.placeholder.com/250/FFFFFF?text=21">
+                    <img src="https://via.placeholder.com/260/FFFFFF?text=22">
+                    <img src="https://via.placeholder.com/270/FFFFFF?text=23">
+                    <img src="https://via.placeholder.com/280/FFFFFF?text=24">
+                </div>
+                <button class="handle right-handle">
+                    <div class="text">&#8250;</div>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__social">
+            <a class="footer__link" href="#">
+                <img class="footer__image" src="./assets/icons/facebook.svg">
+            </a>
+            <a class="footer__link" href="#">
+                <img class="footer__image" src="./assets/icons/instagram.svg">
+            </a>
+            <a class="footer__link" href="#">
+                <img class="footer__image" src="./assets/icons/twitter.svg">
+            </a>
+            <a class="footer__link" href="#">
+                <img class="footer__image" src="./assets/icons/youtube.svg">
+            </a>
+        </div>
+        <div class="grid">
+            <div class="grid__item">
+                <a class="grid__link" href="#">
+                    Audio Description
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="grid__link" href="#">
+                    Help Center
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="grid__link" href="#">
+                    Gift Cards
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="grid__link" href="#">
+                    Media Center
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="grid__link" href="#">
+                    Investor Relations
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="grid__link" href="#">
+                    Jobs
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="grid__link" href="#">
+                    Terms of Use
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="grid__link" href="#">
+                    Privacy
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="grid__link" href="#">
+                    Legal Notices
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="grid__link" href="#">
+                    Cookie Preferences
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="grid__link" href="#">
+                    Corporate Information
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="grid__link" href="#">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+        <div>
+            <button class="footer__btn">
+                Service Code
+            </button>
+        </div>
+        <div class="copyright">
+            <span class="copyright__span">
+                © 1997-2023 Netflix, Inc.
+            </span>
+        </div>
+    </footer>
+    <script src="./assets/scripts/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="./assets/scripts/scripts.js"></script>
+</body>
+
+</html>
