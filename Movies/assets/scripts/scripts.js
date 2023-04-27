@@ -22,6 +22,7 @@ function opengenres() {
     } else { grid.style.display = 'none' }
 }
 
+///////////////////////////////////////////////////////////////////////////////////
 // Progress bar
 document.addEventListener("click", e => {
     let handle

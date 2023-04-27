@@ -318,12 +318,12 @@ $c: #fff;
         padding: 0;
 
         &--logo {
-            width: 100%;
+            width: 32vw;
             margin-bottom: 1rem;
         }
 
         &--discription {
-            width: 100%;
+            width: 32vw;
             margin-bottom: 1rem;
         }
 
@@ -390,11 +390,11 @@ $c: #fff;
 }
 
 .footer {
-    margin: 1.25rem 10.25rem;
-    padding: 0 3.5rem;
+    margin: 1.25vw 10.25vw;
+    padding: 0 3.5vw;
 
     &__social {
-        margin-bottom: 0.675rem;
+        margin-bottom: 0.675vw;
     }
 
     &__link {
@@ -404,18 +404,18 @@ $c: #fff;
     &__image {
         width: 1.5rem !important;
         height: 1.5rem !important;
-        margin: 0 1rem 0 0;
+        margin: 0 1vw 0 0;
     }
 }
 
 .grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    padding: 0.625rem;
-    margin-bottom: 1rem;
+    padding: 0.625vw;
+    margin-bottom: 1vw;
 
     &__item {
-        margin-bottom: 1rem;
+        margin-bottom: 1vw;
     }
 
     &__link {
@@ -432,8 +432,8 @@ $c: #fff;
     background-color: $bg;
     border: #808080 1px solid;
     color: #808080;
-    padding: 0.5rem;
-    margin-bottom: 1.25rem;
+    padding: 0.5vw;
+    margin-bottom: 1.25vw;
 
     &:hover {
         color: white;
@@ -441,7 +441,7 @@ $c: #fff;
 }
 
 .copyright {
-    margin-bottom: 1rem;
+    margin-bottom: 1vw;
 
     &__span {
         color: #808080;
