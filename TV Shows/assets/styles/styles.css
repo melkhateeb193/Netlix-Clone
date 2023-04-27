@@ -155,31 +155,35 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
+
 .search img {
   border: none;
-  background-color: #141414;
   padding: 1px 6px;
   height: 1.5rem;
   position: absolute;
 }
+
 .search__icon {
   z-index: 99;
 }
+
 .search__close {
   right: 0;
 }
+
 .search input {
   border: none;
   font-family: inherit;
   outline: none;
   width: 2rem;
   transition: 500ms width ease-in-out;
-  background-color: #141414;
   color: #fff;
 }
+
 .search__open input {
   width: 17rem;
   height: 2.5rem;
+  background-color: #141414;
   outline: 1px solid #fff;
   padding: 0 0 0 50px;
 }
