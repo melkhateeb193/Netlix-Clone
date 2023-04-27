@@ -127,7 +127,6 @@ function throttle(cb, delay = 1000) {
 }
 //---------------------------------- navbar Sticky ----------------------------------------
 
-
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
@@ -138,6 +137,7 @@ function myFunction() {
   if (window.pageYOffset > 0) {
     navbar.classList.add("sticky")
     navbar.style = "background-color: #141414;"
+    // document.getElementById("sliderMargin").style = "margin-top: rem;"
   } else if(window.pageYOffset == 0) {
     navbar.classList.remove("sticky");
     navbar.style = "background-color: transparent;"

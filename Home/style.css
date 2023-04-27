@@ -2,6 +2,11 @@ body {
     background-color: #141414;
 }
 /* ----------------------------------------- */
+
+#sliderMargin{
+    margin-top: 0rem !important;
+}
+
 .pageBody {
     background: url("https://occ-0-4609-116.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABcyuh-KNCK3VIIWTdUmEuX8xd8mzHedzUpGdjWIPWIv-962RSoR78qAw7qNF6YXOSbAAwJNkG4jM05rqExrY3hr-eqVSeXN0-mzB.webp?r=565") no-repeat;
     background-size: 100% 45vw !important;
