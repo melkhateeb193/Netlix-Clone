@@ -32,6 +32,14 @@ a.dropdown-item:hover{
 background: #000;
 color: white ;
 }
+button.btn.ms-3 > a {
+    text-decoration: none !important;
+    color: white;
+}
+button.d-flex.justify-content-center.align-items-center.btn.pe-4.ps-3 > a {
+    text-decoration: none !important;
+    color: white; 
+}
 i.fa-solid.fa-globe {
     background: transparent;
 }

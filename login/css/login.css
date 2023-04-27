@@ -24,7 +24,10 @@ main.container.p-5{
     font-weight: 500;
     margin-bottom: 6%;
 }
-
+ a {
+    text-decoration: none;
+    color: white;
+}
 footer {
 background-color: rgba(0, 0, 0, 0.7);
 }
