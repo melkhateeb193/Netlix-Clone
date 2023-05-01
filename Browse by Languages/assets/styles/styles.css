@@ -2,6 +2,7 @@
   font-family: NetflixSans-Regular;
   src: url(../fonts/NetflixSans-Regular.otf);
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -47,6 +48,7 @@ body {
   position: relative;
   display: inline-block;
 }
+
 .notifcations__body {
   display: none;
   position: absolute;
@@ -59,21 +61,26 @@ body {
   height: 6.125rem;
   z-index: 1;
 }
+
 .notifcations__body--arrow {
   position: absolute;
   right: 0;
   top: -2rem;
 }
+
 .notifcations__grid {
   display: flex;
 }
+
 .notifcations__grid--img {
   padding: 1rem;
   border-radius: 20px;
 }
+
 .notifcations__grid--section {
   padding: 1rem 1rem 1rem 0;
 }
+
 .notifcations:hover .notifcations__body {
   display: block;
 }
@@ -92,10 +99,12 @@ body {
   position: relative;
   display: inline-block;
 }
+
 .profile__picture {
   width: 30px;
   height: 30px;
 }
+
 .profile__menu {
   display: none;
   position: absolute;
@@ -108,43 +117,53 @@ body {
   z-index: 1;
   font-size: 13px;
 }
+
 .profile__menu--arrow {
   position: absolute;
   right: 0;
   top: -1.8rem;
 }
+
 .profile:hover .profile__menu {
   display: block;
 }
-.profile__menu--list, .profile__menu--listEnd {
+
+.profile__menu--list,
+.profile__menu--listEnd {
   list-style-type: none;
   padding: 0.625rem 0 0.313rem 0;
   margin: 0;
 }
+
 .profile__menu--listItem {
   width: 13.625rem;
   padding: 0.313rem 0.625rem;
 }
+
 .profile__menu--listImg1 {
   width: 2rem;
   height: 2rem;
   border-radius: 4px;
   margin-right: 0.625rem;
 }
+
 .profile__menu--listImg2 {
   width: 2rem;
   height: 1.5rem;
   border-radius: 4px;
   margin-right: 0.625rem;
 }
+
 .profile__menu--listEnd {
   text-align: center;
   border-top: 1px solid hsla(0, 0%, 100%, 0.25);
 }
+
 .profile__menu--btn {
   text-decoration: none;
   color: white;
 }
+
 .profile__menu--btn:hover {
   text-decoration: underline;
 }
@@ -155,6 +174,7 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
+
 .search img {
   border: none;
   background-color: #141414;
@@ -162,12 +182,15 @@ body {
   height: 1.5rem;
   position: absolute;
 }
+
 .search__icon {
   z-index: 99;
 }
+
 .search__close {
   right: 0;
 }
+
 .search input {
   border: none;
   font-family: inherit;
@@ -177,6 +200,7 @@ body {
   background-color: #141414;
   color: #fff;
 }
+
 .search__open input {
   width: 17rem;
   height: 2.5rem;
@@ -184,13 +208,30 @@ body {
   padding: 0 0 0 50px;
 }
 
-.top {
+.pageBody {
   background-image: url("../images/interstellar.webp");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 50vw;
 }
 
+@media (max-width: 1350px) {
+  .pageBody {
+    background-size: 100% 50vw !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pageBody {
+    background-size: 100% 55vw !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .pageBody {
+    background-size: 100% 60vw !important;
+  }
+}
 .nav2 {
   display: flex;
 }
@@ -203,6 +244,7 @@ body {
   padding: 0 1rem 0 0;
   margin: 0 20px 0 0;
 }
+
 .brand2:hover,
 .brand2 :visited {
   color: #fff;
@@ -220,9 +262,11 @@ body {
   display: inline-block;
   position: relative;
 }
+
 .genres:hover {
   background-color: transparent;
 }
+
 .genres__label1 {
   padding: 0 10px;
   position: relative;
@@ -230,6 +274,7 @@ body {
   width: 3.5rem;
   cursor: pointer;
 }
+
 .genres__grid {
   display: none;
   grid-template-columns: auto auto auto;
@@ -240,17 +285,21 @@ body {
   padding: 0.5rem;
   position: absolute;
 }
+
 .genres__grid--item {
   width: 8.75rem;
   height: 1.5rem;
 }
+
 .genres__grid--link {
   color: white;
   text-decoration: none;
 }
+
 .genres__grid--link:hover {
   text-decoration: underline;
 }
+
 .genres__openGrid {
   display: grid;
 }
@@ -261,16 +310,19 @@ body {
   height: 1.75rem;
   justify-content: center;
 }
+
 .group__btn {
   position: relative;
   border: 1px solid white;
   width: 100%;
   opacity: 0.7;
 }
+
 .group__btn--icon {
   width: 0.75rem;
   margin: 0 0 0 1rem;
 }
+
 .group__btn--input {
   position: absolute;
   background-color: transparent;
@@ -280,20 +332,25 @@ body {
 .title {
   margin: 10rem 0 0 0;
 }
+
 .title__space {
   padding: 0;
 }
+
 .title__body {
   padding: 0;
 }
+
 .title__body--logo {
   width: 32vw;
   margin-bottom: 1rem;
 }
+
 .title__body--discription {
   width: 32vw;
   margin-bottom: 1rem;
 }
+
 .title__body--button {
   padding: 0.5rem 1.5rem;
   margin: 0 0.675rem 0.675rem 0;
@@ -303,12 +360,15 @@ body {
   background-color: transparent;
   font-weight: bold;
 }
+
 .title__body--button__element {
   margin-right: 0.5rem;
 }
+
 .title__body--button:hover {
   opacity: 0.8;
 }
+
 .title__aside {
   padding: 0;
   margin: 0;
@@ -318,11 +378,13 @@ body {
   height: 2.159rem;
   margin-top: 13rem;
 }
+
 .title__aside--maturityRating {
   background-color: rgba(51, 51, 51, 0.6);
   border-left: 3px solid #dcdcdc;
   padding: 0.45rem 3.15rem 0.45rem 0.72rem;
 }
+
 .title__aside--btn {
   background-color: transparent;
   border: white solid 1px;
@@ -331,6 +393,7 @@ body {
   height: 2.5rem;
   opacity: 0.8;
 }
+
 .title__aside--btn:hover {
   opacity: 1;
 }
@@ -338,6 +401,7 @@ body {
 .btn1 {
   background-color: #fff;
 }
+
 .btn1__text {
   color: #141414;
 }
@@ -350,14 +414,17 @@ body {
   margin: 1.25vw 10.25vw;
   padding: 0 3.5vw;
 }
+
 .footer__social {
   margin-bottom: 0.675vw;
 }
+
 .footer__link {
   color: #fff;
   border: 0;
   text-decoration: none;
 }
+
 .footer__image {
   width: 1.5rem !important;
   height: 1.5rem !important;
@@ -370,13 +437,16 @@ body {
   padding: 0.625vw;
   margin-bottom: 1vw;
 }
+
 .grid__item {
   margin-bottom: 1vw;
 }
+
 .grid__link {
   color: #808080;
   text-decoration: none;
 }
+
 .grid__link:hover {
   text-decoration: underline;
 }
@@ -388,6 +458,7 @@ body {
   padding: 0.5vw;
   margin-bottom: 1.25vw;
 }
+
 .footer__btn:hover {
   color: white;
 }
@@ -395,6 +466,7 @@ body {
 .copyright {
   margin-bottom: 1vw;
 }
+
 .copyright__span {
   color: #808080;
 }
@@ -430,7 +502,7 @@ body {
   transition: transform 250ms ease-in-out;
 }
 
-.slider > img {
+.slider>img {
   flex: 0 0 calc(100% / var(--items-per-screen));
   max-width: calc(100% / var(--items-per-screen));
   aspect-ratio: 16/9;
@@ -510,29 +582,36 @@ body {
     --items-per-screen: 3;
   }
 }
+
 @media (max-width: 500px) {
   :root {
     --handle-size: 2.5rem;
     --img-gap: .2rem;
   }
+
   .slider {
     --items-per-screen: 2;
   }
+
   .handle {
     font-size: 4rem;
   }
+
   .title {
     font-size: 1rem;
   }
+
   .progress-item {
     flex: 0 0 1.5rem;
     min-width: 1.5rem;
     height: 0.5rem;
   }
+
   .progress-bar {
     display: none;
   }
 }
+
 .margin {
   margin: 3rem 0;
 }
