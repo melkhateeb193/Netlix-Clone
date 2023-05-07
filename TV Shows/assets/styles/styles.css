@@ -205,13 +205,25 @@ body {
   .pageBody {
     background-size: 100% 55vw !important;
   }
+  .title{
+    margin-top: 2vw !important;
+  }
 }
 
 @media (max-width: 700px) {
   .pageBody {
     background-size: 100% 60vw !important;
   }
+  .hide{
+    display: none !important;
+  }
+  .block{
+    padding: 20px !important;
+    background-color: #141414;
+    border: #fff solid 1px;
+  }
 }
+
 
 .nav2 {
   display: flex;

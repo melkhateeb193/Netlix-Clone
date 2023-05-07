@@ -1,9 +1,10 @@
 body {
     background-color: #141414;
 }
+
 /* ----------------------------------------- */
 
-#sliderMargin{
+#sliderMargin {
     margin-top: 0rem !important;
 }
 
@@ -44,12 +45,15 @@ body {
     padding: 0.3rem;
     font-size: 1.3rem;
 }
+
 #btnsV1 img {
     width: 2vw;
 }
+
 #btnsV1:hover {
     background-color: rgba(255, 255, 255, 0.6);
 }
+
 #btnsV2 {
     background-color: rgba(128, 128, 128, 0.8);
     margin-left: 1.5rem;
@@ -59,9 +63,11 @@ body {
     padding: 0.3rem;
     font-size: 1.3rem;
 }
+
 #btnsV2 img {
     width: 2vw;
 }
+
 #btnsV2:hover {
     background-color: rgba(128, 128, 128, 0.5);
 }
@@ -75,10 +81,12 @@ body {
     font-weight: bold;
     margin-left: 0.5vw;
 }
+
 @media (max-width: 1350px) {
     .pageBody {
         background-size: 100% 50vw !important;
     }
+
     #btnsV2 {
         background-color: rgba(128, 128, 128, 0.8);
         margin-left: 1rem;
@@ -88,6 +96,7 @@ body {
         padding: 0.3rem;
         font-size: 1rem;
     }
+
     #btnsV1 {
         background-color: rgba(255, 255, 255, 1);
         margin-left: 0px;
@@ -96,17 +105,21 @@ body {
         padding: 0.3rem;
         font-size: 1.3rem;
     }
+
     #btnsV1 img {
         width: 1.8rem;
     }
+
     #btnsV2 img {
         width: 1.8rem;
     }
 }
+
 @media (max-width: 1000px) {
     .pageBody {
         background-size: 100% 55vw !important;
     }
+
     #btnsV2 {
         background-color: rgba(128, 128, 128, 0.8);
         margin-left: 1.5rem;
@@ -116,6 +129,7 @@ body {
         padding: 0.3rem;
         font-size: 1rem;
     }
+
     #btnsV1 {
         background-color: rgba(255, 255, 255, 1);
         margin-left: 0px;
@@ -124,17 +138,21 @@ body {
         padding: 0.3rem;
         font-size: 1rem;
     }
+
     #btnsV1 img {
         width: 1.2rem;
     }
+
     #btnsV2 img {
         width: 1.2rem;
     }
 }
+
 @media (max-width: 700px) {
     .pageBody {
         background-size: 100% 60vw !important;
     }
+
     #btnsV2 {
         background-color: rgba(128, 128, 128, 0.8);
         margin-left: 1.5rem;
@@ -144,6 +162,7 @@ body {
         padding: 0.3rem;
         font-size: 0.8rem;
     }
+
     #btnsV1 {
         background-color: rgba(255, 255, 255, 1);
         margin-left: 0px;
@@ -152,11 +171,13 @@ body {
         padding: 0.3rem;
         font-size: 0.8rem;
     }
-    .title{
+
+    .title {
         font-size: 1.3rem !important;
     }
 
 }
+
 @media (max-width: 500px) {
     #btnsV1 {
         background-color: rgba(255, 255, 255, 1);
@@ -166,6 +187,7 @@ body {
         padding: 0.1rem;
         font-size: 0.7rem;
     }
+
     #btnsV2 {
         background-color: rgba(128, 128, 128, 0.8);
         margin-left: 5px !important;
@@ -175,13 +197,24 @@ body {
         padding: 0px;
         font-size: 0.7rem;
     }
+
     #btnsV1 img {
         width: 0.7rem;
     }
+
     #btnsV2 img {
         width: 0.7rem;
     }
-    
+
+    .hide {
+        display: none !important;
+    }
+
+    .block {
+        padding: 20px !important;
+        background-color: #141414;
+        border: #fff solid 1px;
+    }
 }
 
 #endBtons {
@@ -271,4 +304,3 @@ footer .list-group {
     color: #808080;
     font-size: 11px
 }
-
