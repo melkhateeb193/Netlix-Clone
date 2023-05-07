@@ -381,8 +381,12 @@ body {
 }
 
 .footer {
-  margin: 1.25vw 10.25vw;
-  padding: 0 3.5vw;
+  /* margin: 1.25vw 10.25vw;
+  padding: 0 3.5vw; */
+  margin: 0 ;
+}
+div#videoBtns {
+  margin: 0;
 }
 .footer__social {
   margin-bottom: 0.675vw;
@@ -570,5 +574,6 @@ body {
 .margin {
   margin: 3rem 0;
 }
+
 
 /*# sourceMappingURL=styles.css.map */

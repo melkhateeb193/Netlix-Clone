@@ -241,6 +241,11 @@ body {
     background-color: #141414;
     border: #fff solid 1px;
   }
+
+  .grid{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .nav2 {
@@ -422,10 +427,14 @@ body {
 }
 
 .footer {
-  margin: 1.25vw 10.25vw;
-  padding: 0 3.5vw;
-}
+  /* margin: 1.25vw 10.25vw;
+  padding: 0 3.5vw; */
+  margin: 0 !important;
 
+}
+div#videoBtns {
+  margin: 0;
+}
 .footer__social {
   margin-bottom: 0.675vw;
 }
