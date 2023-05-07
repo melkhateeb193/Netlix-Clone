@@ -114,7 +114,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.15);
   width: 13.75rem;
   height: 24rem;
-  z-index: 1;
+  z-index: 99;
   font-size: 13px;
 }
 
@@ -224,11 +224,22 @@ body {
   .pageBody {
     background-size: 100% 55vw !important;
   }
+  .title{
+    margin-top: 2vw !important;
+  }
 }
 
 @media (max-width: 700px) {
   .pageBody {
     background-size: 100% 60vw !important;
+  }
+  .hide{
+    display: none !important;
+  }
+  .block{
+    padding: 20px !important;
+    background-color: #141414;
+    border: #fff solid 1px;
   }
 }
 

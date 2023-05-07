@@ -231,7 +231,19 @@ body {
   .pageBody {
     background-size: 100% 60vw !important;
   }
+
+  .hide {
+    display: none !important;
+  }
+
+  .block {
+    padding: 20px !important;
+    background-color: #141414;
+    border: #fff solid 1px;
+    z-index: 99;
+  }
 }
+
 .nav2 {
   display: flex;
 }

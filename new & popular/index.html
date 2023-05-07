@@ -1,377 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="./assets/icons/netflix icon.png">
-<link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
-<link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
-<link rel="stylesheet" href="./assets/styles/styles.css">
-<title>Movies - Netflix</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/icons/netflix icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <title>Movies - Netflix</title>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/icons/Netflix logo.svg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/icons/Netflix logo.svg">
+      </a>
+      <a class="navbar-toggler navbar__btn dropdown-toggle" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbar1Content" aria-controls="navbar1Content" aria-expanded="false"
+        aria-label="Toggle navigation" role="button">
+        Browse
+      </a>
+      <div class="collapse navbar-collapse block" id="navbar1Content">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Home/index.html">
+              Home
             </a>
-            <a class="navbar-toggler navbar__btn dropdown-toggle" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbar1Content" aria-controls="navbar1Content" aria-expanded="false"
-                aria-label="Toggle navigation" role="button">
-                Browse
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/TV Shows/index.html">
+              TV Shows
             </a>
-            <div class="collapse navbar-collapse" id="navbar1Content">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/Home/index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/TV Shows/index.html">
-                            TV Shows
-                        </a>
-                    </li>
-                    <li class="nav-item checked">
-                        <a class="nav-link active " aria-current="page" href="/Movies/index.html">
-                            Movies
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/new & popular/index.html">
-                            New & Popular
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/my list/index.html">
-                            My List
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/Browse by Languages/browseByLanguage.html">
-                            Browse by Languages
-                        </a>
-                    </li>
-                </ul>
-                <div class="secondary-navigation d-flex">
-                    <div class="nav-element">
-                        <div class="search">
-                            <img class="search__icon" src="./assets/icons/search.svg">
-                            <input type="text" class="search__input" autofocus placeholder=" ">
-                            <img class="search__close" src="./assets/icons/close.svg">
-                        </div>
-                    </div>
-                    <div class="nav-element">
-                        <a class="navbar__btn" href="#">
-                            Kids
-                        </a>
-                    </div>
-                    <div class="nav-element notifcations">
-                        <a class="navbar__btn">
-                            <img src="./assets/icons/bell.svg">
-                        </a>
-                        <div class="notifcations__body">
-                            <img class="notifcations__body--arrow" src="./assets/icons/arrow down.svg">
-                            <div class="notifcations__grid">
-                                <img class="notifcations__grid--img" src="./assets/images/notifcation.jpg">
-                                <div class="notifcations__grid--section">
-                                    <div>New Arrival</div>
-                                    <div>The Diplomat</div>
-                                    <span>1 day ago</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nav-element profile">
-                        <a class="navbar__btn dropdown-toggle">
-                            <img class="profile__picture" src="./assets/images/smile1.png">
-                        </a>
-                        <div class="profile__menu">
-                            <img class="profile__menu--arrow" src="./assets/icons/arrow down.svg">
-                            <ul class="profile__menu--list">
-                                <li class="profile__menu--listItem">
-                                    <img class="profile__menu--listImg1" src="./assets/icons/p2.png">
-                                    <a class="profile__menu--btn" href="#">
-                                        User 1
-                                    </a>
-                                </li>
-                                <li class="profile__menu--listItem">
-                                    <img class="profile__menu--listImg1" src="./assets/icons/p3.png">
-                                    <a class="profile__menu--btn" href="#">
-                                        User 2
-                                    </a>
-                                </li>
-                                <li class="profile__menu--listItem">
-                                    <img class="profile__menu--listImg1" src="./assets/icons/p4.png">
-                                    <a class="profile__menu--btn" href="#">
-                                        User 3
-                                    </a>
-                                </li>
-                                <li class="profile__menu--listItem">
-                                    <img class="profile__menu--listImg1" src="./assets/icons/kids.png">
-                                    <a class="profile__menu--btn" href="#">
-                                        Kids
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="profile__menu--list">
-                                <li class="profile__menu--listItem">
-                                    <img class="profile__menu--listImg2" src="./assets/icons/pen.svg">
-                                    <a class="profile__menu--btn" href="#">
-                                        Manage Profiles
-                                    </a>
-                                </li>
-                                <li class="profile__menu--listItem">
-                                    <img class="profile__menu--listImg2" src="./assets/icons/transfer.svg">
-                                    <a class="profile__menu--btn" href="#">
-                                        Transfer Profile
-                                    </a>
-                                </li>
-                                <li class="profile__menu--listItem">
-                                    <img class="profile__menu--listImg2" src="./assets/icons/profile.svg">
-                                    <a class="profile__menu--btn" href="#">
-                                        Account
-                                    </a>
-                                </li>
-                                <li class="profile__menu--listItem">
-                                    <img class="profile__menu--listImg2" src="./assets/icons/help.svg">
-                                    <a class="profile__menu--btn" href="#">
-                                        Help Center
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="profile__menu--listEnd">
-                                <li class="profile__menu--listItem">
-                                    <a class="profile__menu--btn" href="#">
-                                        Sign out of Netflix
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+          </li>
+          <li class="nav-item checked">
+            <a class="nav-link active " aria-current="page" href="/Movies/index.html">
+              Movies
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/new & popular/index.html">
+              New & Popular
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/my list/index.html">
+              My List
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Browse by Languages/browseByLanguage.html">
+              Browse by Languages
+            </a>
+          </li>
+        </ul>
+        <div class="secondary-navigation d-flex hide">
+          <div class="nav-element">
+            <div class="search">
+              <img class="search__icon" src="./assets/icons/search.svg">
+              <input type="text" class="search__input" autofocus placeholder=" ">
+              <img class="search__close" src="./assets/icons/close.svg">
             </div>
+          </div>
+          <div class="nav-element">
+            <a class="navbar__btn" href="#">
+              Kids
+            </a>
+          </div>
+          <div class="nav-element notifcations">
+            <a class="navbar__btn">
+              <img src="./assets/icons/bell.svg">
+            </a>
+            <div class="notifcations__body">
+              <img class="notifcations__body--arrow" src="./assets/icons/arrow down.svg">
+              <div class="notifcations__grid">
+                <img class="notifcations__grid--img" src="./assets/images/notifcation.jpg">
+                <div class="notifcations__grid--section">
+                  <div>New Arrival</div>
+                  <div>The Diplomat</div>
+                  <span>1 day ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-element profile">
+            <a class="navbar__btn dropdown-toggle">
+              <img class="profile__picture" src="./assets/images/smile1.png">
+            </a>
+            <div class="profile__menu">
+              <img class="profile__menu--arrow" src="./assets/icons/arrow down.svg">
+              <ul class="profile__menu--list">
+                <li class="profile__menu--listItem">
+                  <img class="profile__menu--listImg1" src="./assets/icons/p2.png">
+                  <a class="profile__menu--btn" href="#">
+                    User 1
+                  </a>
+                </li>
+                <li class="profile__menu--listItem">
+                  <img class="profile__menu--listImg1" src="./assets/icons/p3.png">
+                  <a class="profile__menu--btn" href="#">
+                    User 2
+                  </a>
+                </li>
+                <li class="profile__menu--listItem">
+                  <img class="profile__menu--listImg1" src="./assets/icons/p4.png">
+                  <a class="profile__menu--btn" href="#">
+                    User 3
+                  </a>
+                </li>
+                <li class="profile__menu--listItem">
+                  <img class="profile__menu--listImg1" src="./assets/icons/kids.png">
+                  <a class="profile__menu--btn" href="#">
+                    Kids
+                  </a>
+                </li>
+              </ul>
+              <ul class="profile__menu--list">
+                <li class="profile__menu--listItem">
+                  <img class="profile__menu--listImg2" src="./assets/icons/pen.svg">
+                  <a class="profile__menu--btn" href="#">
+                    Manage Profiles
+                  </a>
+                </li>
+                <li class="profile__menu--listItem">
+                  <img class="profile__menu--listImg2" src="./assets/icons/transfer.svg">
+                  <a class="profile__menu--btn" href="#">
+                    Transfer Profile
+                  </a>
+                </li>
+                <li class="profile__menu--listItem">
+                  <img class="profile__menu--listImg2" src="./assets/icons/profile.svg">
+                  <a class="profile__menu--btn" href="#">
+                    Account
+                  </a>
+                </li>
+                <li class="profile__menu--listItem">
+                  <img class="profile__menu--listImg2" src="./assets/icons/help.svg">
+                  <a class="profile__menu--btn" href="#">
+                    Help Center
+                  </a>
+                </li>
+              </ul>
+              <ul class="profile__menu--listEnd">
+                <li class="profile__menu--listItem">
+                  <a class="profile__menu--btn" href="#">
+                    Sign out of Netflix
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
   </nav>
   <section>
-        <div class="row container-fluid">
-            <div class="header">
-              <h3 class="title">Worth the wait</h3>
-              <div class="progress-bar"></div>
-            </div>
-            <div class="container">
-              <button class="handle left-handle">
-                <div class="text">&#8249;</div>
-              </button>
-              <div class="slider">
-                <img src="./assets/images/1-11.jpg">
-                <img src="./assets/images/2.jpg">
-                <img src="./assets/images/3.jpg">
-                <img src="./assets/images/4.jpg">
-                <img src="./assets/images/5.jpg">
-                <img src="./assets/images/6.jpg">
-                <img src="./assets/images/7.jpg">
-                <img src="./assets/images/8.jpg">
-                <img src="./assets/images/9.jpg">
-                <img src="./assets/images/10.jpg">
-                <img src="./assets/images/11.jpg">
-                <img src="./assets/images/1-1.jpg">
-              </div>
-              <button class="handle right-handle">
-                <div class="text">&#8250;</div>
-              </button>
-            </div>
-          </div>
-        <div class="row container-fluid">
-            <div class="header">
-              <h3 class="title">New on Netflix</h3>
-              <div class="progress-bar"></div>
-            </div>
-            <div class="container">
-              <button class="handle left-handle">
-                <div class="text">&#8249;</div>
-              </button>
-              <div class="slider">
-                <img src="./assets/images/1-1.jpg">
-                <img src="./assets/images/1-2.jpg">
-                <img src="./assets/images/1-3.jpg">
-                <img src="./assets/images/1-4.jpg">
-                <img src="./assets/images/1-5.jpg">
-                <img src="./assets/images/1-6.jpg">
-                <img src="./assets/images/1-7.jpg">
-                <img src="./assets/images/1-8.jpg">
-                <img src="./assets/images/1-9.jpg">
-                <img src="./assets/images/1-10.jpg">
-                <img src="./assets/images/1-11.jpg">
-                <img src="./assets/images/1-12.jpg">
-              </div>
-              <button class="handle right-handle">
-                <div class="text">&#8250;</div>
-              </button>
-            </div>
-          </div>
-        <div class="row container-fluid">
-            <div class="header">
-              <h3 class="title">Top 10 TV programmes in Egypt Today</h3>
-              <div class="progress-bar"></div>
-            </div>
-            <div class="container">
-              <button class="handle left-handle">
-                <div class="text">&#8249;</div>
-              </button>
-              <div class="slider">
-                <img src="./assets/images/2-1.jpg">
-                <img src="./assets/images/2-2.jpg">
-                <img src="./assets/images/2-3.jpg">
-                <img src="./assets/images/2-4.jpg">
-                <img src="./assets/images/2-5.jpg">
-                <img src="./assets/images/2-6.jpg">
-                <img src="./assets/images/2-7.jpg">
-                <img src="./assets/images/2-8.jpg">
-                <img src="./assets/images/2-9.jpg">
-                <img src="./assets/images/2-10.jpg">
-                <img src="./assets/images/2-7.jpg">
-                <img src="./assets/images/1-11.jpg">
-              </div>
-              <button class="handle right-handle">
-                <div class="text">&#8250;</div>
-              </button>
-            </div>
-          </div>
-        <div class="row container-fluid">
-            <div class="header">
-              <h3 class="title">Top 10 Films in Egypt Today</h3>
-              <div class="progress-bar"></div>
-            </div>
-            <div class="container">
-              <button class="handle left-handle">
-                <div class="text">&#8249;</div>
-              </button>
-              <div class="slider">
-                <img src="./assets/images/3-1.jpg">
-                <img src="./assets/images/3-2.jpg">
-                <img src="./assets/images/3-3.jpg">
-                <img src="./assets/images/3-4.jpg">
-                <img src="./assets/images/3-5.jpg">
-                <img src="./assets/images/3-6.jpg">
-                <img src="./assets/images/3-7.jpg">
-                <img src="./assets/images/3-8.jpg">
-                <img src="./assets/images/3-9.jpg">
-                <img src="./assets/images/3-10.jpg">
-                <img src="./assets/images/3-9.jpg">
-                <img src="./assets/images/1-8.jpg">
-              </div>
-              <button class="handle right-handle">
-                <div class="text">&#8250;</div>
-              </button>
-            </div>
-          </div>
-        <div class="row container-fluid">
-            <div class="header">
-              <h3 class="title">Coming This week</h3>
-              <div class="progress-bar"></div>
-            </div>
-            <div class="container">
-              <button class="handle left-handle">
-                <div class="text">&#8249;</div>
-              </button>
-              <div class="slider">
-                <img src="./assets/images/4-1.jpg">
-                <img src="./assets/images/4-2.jpg">
-                <img src="./assets/images/4-3.jpg">
-                <img src="./assets/images/4-4.jpg">
-                <img src="./assets/images/4-5.jpg">
-                <img src="./assets/images/4-6.jpg">
-                <img src="./assets/images/4-7.jpg">
-                <img src="./assets/images/4-8.jpg">
-                <img src="./assets/images/4-9.jpg">
-                <img src="./assets/images/4-10.jpg">
-                <img src="./assets/images/4-11.jpg">
-                <img src="./assets/images/4-12.jpg">
-              </div>
-              <button class="handle right-handle">
-                <div class="text">&#8250;</div>
-              </button>
-            </div>
-          </div>
-        <div class="row container-fluid">
-            <div class="header">
-              <h3 class="title">Coming Next Week</h3>
-              <div class="progress-bar"></div>
-            </div>
-            <div class="container">
-              <button class="handle left-handle">
-                <div class="text">&#8249;</div>
-              </button>
-              <div class="slider">
-                <img src="./assets/images/1-1.jpg"> 
-                <img src="./assets/images/1-2.jpg">
-                <img src="./assets/images/1-3.jpg">
-                <img src="./assets/images/1-4.jpg">
-                <img src="./assets/images/1-5.jpg">
-                <img src="./assets/images/1-6.jpg">
-                <img src="./assets/images/1-7.jpg">
-                <img src="./assets/images/1-8.jpg">
-                <img src="./assets/images/1-9.jpg">
-                <img src="./assets/images/1-10.jpg">
-                <img src="./assets/images/1-11.jpg">
-                <img src="./assets/images/1-12.jpg">
-              </div>
-              <button class="handle right-handle">
-                <div class="text">&#8250;</div>
-              </button>
-            </div>
-          </div>
+    <div class="row container-fluid">
+      <div class="header">
+        <h3 class="title">Worth the wait</h3>
+        <div class="progress-bar"></div>
+      </div>
+      <div class="container">
+        <button class="handle left-handle">
+          <div class="text">&#8249;</div>
+        </button>
+        <div class="slider">
+          <img src="./assets/images/1-11.jpg">
+          <img src="./assets/images/2.jpg">
+          <img src="./assets/images/3.jpg">
+          <img src="./assets/images/4.jpg">
+          <img src="./assets/images/5.jpg">
+          <img src="./assets/images/6.jpg">
+          <img src="./assets/images/7.jpg">
+          <img src="./assets/images/8.jpg">
+          <img src="./assets/images/9.jpg">
+          <img src="./assets/images/10.jpg">
+          <img src="./assets/images/11.jpg">
+          <img src="./assets/images/1-1.jpg">
+        </div>
+        <button class="handle right-handle">
+          <div class="text">&#8250;</div>
+        </button>
+      </div>
+    </div>
+    <div class="row container-fluid">
+      <div class="header">
+        <h3 class="title">New on Netflix</h3>
+        <div class="progress-bar"></div>
+      </div>
+      <div class="container">
+        <button class="handle left-handle">
+          <div class="text">&#8249;</div>
+        </button>
+        <div class="slider">
+          <img src="./assets/images/1-1.jpg">
+          <img src="./assets/images/1-2.jpg">
+          <img src="./assets/images/1-3.jpg">
+          <img src="./assets/images/1-4.jpg">
+          <img src="./assets/images/1-5.jpg">
+          <img src="./assets/images/1-6.jpg">
+          <img src="./assets/images/1-7.jpg">
+          <img src="./assets/images/1-8.jpg">
+          <img src="./assets/images/1-9.jpg">
+          <img src="./assets/images/1-10.jpg">
+          <img src="./assets/images/1-11.jpg">
+          <img src="./assets/images/1-12.jpg">
+        </div>
+        <button class="handle right-handle">
+          <div class="text">&#8250;</div>
+        </button>
+      </div>
+    </div>
+    <div class="row container-fluid">
+      <div class="header">
+        <h3 class="title">Top 10 TV programmes in Egypt Today</h3>
+        <div class="progress-bar"></div>
+      </div>
+      <div class="container">
+        <button class="handle left-handle">
+          <div class="text">&#8249;</div>
+        </button>
+        <div class="slider">
+          <img src="./assets/images/2-1.jpg">
+          <img src="./assets/images/2-2.jpg">
+          <img src="./assets/images/2-3.jpg">
+          <img src="./assets/images/2-4.jpg">
+          <img src="./assets/images/2-5.jpg">
+          <img src="./assets/images/2-6.jpg">
+          <img src="./assets/images/2-7.jpg">
+          <img src="./assets/images/2-8.jpg">
+          <img src="./assets/images/2-9.jpg">
+          <img src="./assets/images/2-10.jpg">
+          <img src="./assets/images/2-7.jpg">
+          <img src="./assets/images/1-11.jpg">
+        </div>
+        <button class="handle right-handle">
+          <div class="text">&#8250;</div>
+        </button>
+      </div>
+    </div>
+    <div class="row container-fluid">
+      <div class="header">
+        <h3 class="title">Top 10 Films in Egypt Today</h3>
+        <div class="progress-bar"></div>
+      </div>
+      <div class="container">
+        <button class="handle left-handle">
+          <div class="text">&#8249;</div>
+        </button>
+        <div class="slider">
+          <img src="./assets/images/3-1.jpg">
+          <img src="./assets/images/3-2.jpg">
+          <img src="./assets/images/3-3.jpg">
+          <img src="./assets/images/3-4.jpg">
+          <img src="./assets/images/3-5.jpg">
+          <img src="./assets/images/3-6.jpg">
+          <img src="./assets/images/3-7.jpg">
+          <img src="./assets/images/3-8.jpg">
+          <img src="./assets/images/3-9.jpg">
+          <img src="./assets/images/3-10.jpg">
+          <img src="./assets/images/3-9.jpg">
+          <img src="./assets/images/1-8.jpg">
+        </div>
+        <button class="handle right-handle">
+          <div class="text">&#8250;</div>
+        </button>
+      </div>
+    </div>
+    <div class="row container-fluid">
+      <div class="header">
+        <h3 class="title">Coming This week</h3>
+        <div class="progress-bar"></div>
+      </div>
+      <div class="container">
+        <button class="handle left-handle">
+          <div class="text">&#8249;</div>
+        </button>
+        <div class="slider">
+          <img src="./assets/images/4-1.jpg">
+          <img src="./assets/images/4-2.jpg">
+          <img src="./assets/images/4-3.jpg">
+          <img src="./assets/images/4-4.jpg">
+          <img src="./assets/images/4-5.jpg">
+          <img src="./assets/images/4-6.jpg">
+          <img src="./assets/images/4-7.jpg">
+          <img src="./assets/images/4-8.jpg">
+          <img src="./assets/images/4-9.jpg">
+          <img src="./assets/images/4-10.jpg">
+          <img src="./assets/images/4-11.jpg">
+          <img src="./assets/images/4-12.jpg">
+        </div>
+        <button class="handle right-handle">
+          <div class="text">&#8250;</div>
+        </button>
+      </div>
+    </div>
+    <div class="row container-fluid">
+      <div class="header">
+        <h3 class="title">Coming Next Week</h3>
+        <div class="progress-bar"></div>
+      </div>
+      <div class="container">
+        <button class="handle left-handle">
+          <div class="text">&#8249;</div>
+        </button>
+        <div class="slider">
+          <img src="./assets/images/1-1.jpg">
+          <img src="./assets/images/1-2.jpg">
+          <img src="./assets/images/1-3.jpg">
+          <img src="./assets/images/1-4.jpg">
+          <img src="./assets/images/1-5.jpg">
+          <img src="./assets/images/1-6.jpg">
+          <img src="./assets/images/1-7.jpg">
+          <img src="./assets/images/1-8.jpg">
+          <img src="./assets/images/1-9.jpg">
+          <img src="./assets/images/1-10.jpg">
+          <img src="./assets/images/1-11.jpg">
+          <img src="./assets/images/1-12.jpg">
+        </div>
+        <button class="handle right-handle">
+          <div class="text">&#8250;</div>
+        </button>
+      </div>
+    </div>
   </section>
   <section>
   </section>
   <footer class="container-lg container-fluid mt-5 mb-lg-5">
-        <div id="mainFotter" class=" text-white">
-          <!-- Social Media -->
-          <ul class="list-group list-group-horizontal">
-            <li><a class="footerIcon" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a class="footerIcon" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a class="footerIcon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a class="footerIcon" href="#"><i class="fa-brands fa-youtube"></i></a></li>
-          </ul>
-          <!-- Links -->
-          <div class="row-cols-sm-1 row-cols-1 row-cols-md-4  row-cols-lg-4 row" id="footerLinks">
-            <dov class="col">
-              <a class="footerLinkItem" href="#">Audio Description</a>
-              <a class="footerLinkItem" href="#">Investor Relations</a>
-              <a class="footerLinkItem" href="#">Legal Notices</a>
-            </dov>
-            <dov class="col">
-              <a class="footerLinkItem" href="#">Help Center</a>
-              <a class="footerLinkItem" href="#">Jops</a>
-              <a class="footerLinkItem" href="#">Cookie Preferences</a>
-            </dov>
-            <dov class="col">
-              <a class="footerLinkItem" href="#">Gift Cards</a>
-              <a class="footerLinkItem" href="#">Terms of Use</a>
-              <a class="footerLinkItem" href="#">Corporate Information</a>
-            </dov>
-            <dov class="col">
-              <a class="footerLinkItem" href="#">Media Center</a>
-              <a class="footerLinkItem" href="#">Privacy</a>
-              <a class="footerLinkItem" href="#">Contact Us</a>
-            </dov>
-          </div>
-          <!-- Button Code -->
-          <div>
-            <button id="serviceBtn" class="btn mt-4">Service Code</button>
-          </div>
-          <!-- INC -->
-          <div id="INC" class="mt-4">
-            © 1997-2023 Netflix, Inc.
-          </div>
-        </div>
-    </footer>
-  <script src="./assets/scripts/bootstrap.js"></script>
+    <div id="mainFotter" class=" text-white">
+      <!-- Social Media -->
+      <ul class="list-group list-group-horizontal">
+        <li><a class="footerIcon" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a class="footerIcon" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a class="footerIcon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a class="footerIcon" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>
+      <!-- Links -->
+      <div class="row-cols-sm-1 row-cols-1 row-cols-md-4  row-cols-lg-4 row" id="footerLinks">
+        <dov class="col">
+          <a class="footerLinkItem" href="#">Audio Description</a>
+          <a class="footerLinkItem" href="#">Investor Relations</a>
+          <a class="footerLinkItem" href="#">Legal Notices</a>
+        </dov>
+        <dov class="col">
+          <a class="footerLinkItem" href="#">Help Center</a>
+          <a class="footerLinkItem" href="#">Jops</a>
+          <a class="footerLinkItem" href="#">Cookie Preferences</a>
+        </dov>
+        <dov class="col">
+          <a class="footerLinkItem" href="#">Gift Cards</a>
+          <a class="footerLinkItem" href="#">Terms of Use</a>
+          <a class="footerLinkItem" href="#">Corporate Information</a>
+        </dov>
+        <dov class="col">
+          <a class="footerLinkItem" href="#">Media Center</a>
+          <a class="footerLinkItem" href="#">Privacy</a>
+          <a class="footerLinkItem" href="#">Contact Us</a>
+        </dov>
+      </div>
+      <!-- Button Code -->
+      <div>
+        <button id="serviceBtn" class="btn mt-4">Service Code</button>
+      </div>
+      <!-- INC -->
+      <div id="INC" class="mt-4">
+        © 1997-2023 Netflix, Inc.
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"></script>
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
   <script src="./assets/scripts/scripts.js"></script>
 </body>
+
 </html>

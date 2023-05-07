@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/icons/netflix icon.png">
-    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
-    
+
     <title>Movies - Netflix</title>
 </head>
 
@@ -24,7 +25,7 @@
                 aria-label="Toggle navigation" role="button">
                 Browse
             </a>
-            <div class="collapse navbar-collapse" id="navbar1Content">
+            <div class="collapse navbar-collapse block" id="navbar1Content">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/Home/index.html">
@@ -52,12 +53,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/Browse by Languages/browseByLanguage.html">
+                        <a class="nav-link active" aria-current="page"
+                            href="/Browse by Languages/browseByLanguage.html">
                             Browse by Languages
                         </a>
                     </li>
                 </ul>
-                <div class="secondary-navigation d-flex">
+                <div class="secondary-navigation d-flex hide">
                     <div class="nav-element">
                         <div class="search">
                             <img class="search__icon" src="./assets/icons/search.svg">
@@ -162,13 +164,13 @@
             <h3> My list</h3>
             <div class="row g-1">
                 <div class="col-md-4">
-                <img  class="w-100" src="assets/images/first image.png" alt="">
+                    <img class="w-100" src="assets/images/first image.png" alt="">
                 </div>
                 <div class="col-md-4">
-                <img class="w-100" src="assets/images/secimg.png" alt="">
+                    <img class="w-100" src="assets/images/secimg.png" alt="">
                 </div>
                 <div class="col-md-4">
-                <img class="w-100"  src="assets/images/thirdImg.png" alt="">
+                    <img class="w-100" src="assets/images/thirdImg.png" alt="">
                 </div>
             </div>
         </div>
@@ -178,47 +180,46 @@
     </section>
     <footer class="container-lg container-fluid mt-5 mb-lg-5">
         <div id="mainFotter" class=" text-white">
-          <!-- Social Media -->
-          <ul class="list-group list-group-horizontal">
-            <li><a class="footerIcon" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a class="footerIcon" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a class="footerIcon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a class="footerIcon" href="#"><i class="fa-brands fa-youtube"></i></a></li>
-          </ul>
-          <!-- Links -->
-          <div class="row-cols-sm-1 row-cols-1 row-cols-md-4  row-cols-lg-4 row" id="footerLinks">
-            <dov class="col">
-              <a class="footerLinkItem" href="#">Audio Description</a>
-              <a class="footerLinkItem" href="#">Investor Relations</a>
-              <a class="footerLinkItem" href="#">Legal Notices</a>
-            </dov>
-            <dov class="col">
-              <a class="footerLinkItem" href="#">Help Center</a>
-              <a class="footerLinkItem" href="#">Jops</a>
-              <a class="footerLinkItem" href="#">Cookie Preferences</a>
-            </dov>
-            <dov class="col">
-              <a class="footerLinkItem" href="#">Gift Cards</a>
-              <a class="footerLinkItem" href="#">Terms of Use</a>
-              <a class="footerLinkItem" href="#">Corporate Information</a>
-            </dov>
-            <dov class="col">
-              <a class="footerLinkItem" href="#">Media Center</a>
-              <a class="footerLinkItem" href="#">Privacy</a>
-              <a class="footerLinkItem" href="#">Contact Us</a>
-            </dov>
-          </div>
-          <!-- Button Code -->
-          <div>
-            <button id="serviceBtn" class="btn mt-4">Service Code</button>
-          </div>
-          <!-- INC -->
-          <div id="INC" class="mt-4">
-            © 1997-2023 Netflix, Inc.
-          </div>
+            <!-- Social Media -->
+            <ul class="list-group list-group-horizontal">
+                <li><a class="footerIcon" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a class="footerIcon" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a class="footerIcon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a class="footerIcon" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+            <!-- Links -->
+            <div class="row-cols-sm-1 row-cols-1 row-cols-md-4  row-cols-lg-4 row" id="footerLinks">
+                <dov class="col">
+                    <a class="footerLinkItem" href="#">Audio Description</a>
+                    <a class="footerLinkItem" href="#">Investor Relations</a>
+                    <a class="footerLinkItem" href="#">Legal Notices</a>
+                </dov>
+                <dov class="col">
+                    <a class="footerLinkItem" href="#">Help Center</a>
+                    <a class="footerLinkItem" href="#">Jops</a>
+                    <a class="footerLinkItem" href="#">Cookie Preferences</a>
+                </dov>
+                <dov class="col">
+                    <a class="footerLinkItem" href="#">Gift Cards</a>
+                    <a class="footerLinkItem" href="#">Terms of Use</a>
+                    <a class="footerLinkItem" href="#">Corporate Information</a>
+                </dov>
+                <dov class="col">
+                    <a class="footerLinkItem" href="#">Media Center</a>
+                    <a class="footerLinkItem" href="#">Privacy</a>
+                    <a class="footerLinkItem" href="#">Contact Us</a>
+                </dov>
+            </div>
+            <!-- Button Code -->
+            <div>
+                <button id="serviceBtn" class="btn mt-4">Service Code</button>
+            </div>
+            <!-- INC -->
+            <div id="INC" class="mt-4">
+                © 1997-2023 Netflix, Inc.
+            </div>
         </div>
-      </footer>
-    <script src="./assets/scripts/bootstrap.js"></script>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
